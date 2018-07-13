@@ -1,0 +1,179 @@
+{extend name="base/base" /}
+
+{block name="css"}
+   <style>
+         .form-group { border-bottom: solid 1px #00a8f7; margin: 0;padding: 0;}
+        .form-x>div:hover { background-color:#ddd !important; }
+        /*form { border: solid 1px #00a8f7 }*/
+       </style>
+{/block}
+{block name="content"}
+<div class="panel admin-panel">
+    <!--<div class="panel-head"><strong><span class="icon-key"></span> 查看订单</strong></div>-->
+    <div class="body-content">
+        <form method="post" class="form-x" action="" style="text-align: center">
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">订单ID：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['id']}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">订单编码：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['order_num']}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">消耗积分：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['jfd_point']}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">订单金额：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['money']}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">用户手机号：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['user_tel']}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">用户昵称：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['user_name']|default="无"}
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">订单创建时间：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['create_time']}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">订单付款状态：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {switch name="$list['status']"}
+                        {case value="1"}已付款{/case}
+                        {case value="0"}<span style="color:#00CC99">未付款</span>{/case}
+                        {default /}
+                        {/switch}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">订单审核状态：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {switch name="$list['ischeck']"}
+                        {case value="1"}<span style="color:#00CC99">已通过</span>{/case}
+                        {case value="0"}未审核{/case}
+                        {case value="-1"}不通过{/case}
+                        {default /}
+                        {/switch}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">审核人员名称：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['check_name']|default="无"}
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">付款人员名称：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                        {$list['pay_name']|default="无"}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">付款渠道：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                    {$list['pay_channel']|default="无"}
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label for="sitename">付款流水号：</label>
+                </div>
+                <div class="field">
+                    <label style="line-height:33px;">
+                    {$list['pay_tag']|default="无"}
+                    </label>
+                </div>
+            </div>
+
+
+       </form>
+        <script>
+             $(document).ready(function(){
+                    $('.form-group').each(function(){
+                          var index = $('.form-group').index($(this));
+
+                              if(index%2 == 0)
+                              {
+                                  $(this).css({'background-color' : '#fff'});
+                              }
+                              else
+                              {
+                                  $(this).css({'background-color' : '#fff0e8'});
+                              }
+
+                    });
+             });
+            </script>
+
+    </div>
+</div>
+{/block}

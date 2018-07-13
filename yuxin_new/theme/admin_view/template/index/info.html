@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="__static__/css/admin.css">
+    <script src="__static__/js/echarts.common.min.js"></script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+         .content {
+              padding:10px;
+             margin:0 auto;
+             text-align: center;
+             width: 80%;
+             /*height: 900px;*/
+             /*border:2px solid #000;*/
+         }
+        .main {
+            float: left;
+            width: 45%;
+            margin: 0 auto;
+            height: 350px;
+        }
+        .tjt{
+            width:100%;height:100%;
+        }
+        </style>
+</head>
+<body>
+<div class="content" id="content" data = '{$data}'>
+
+   <div  class="main" >
+       <!--<h2> 平台统计 </h2>-->
+       <div id="main" class="tjt"> </div>
+   </div>
+    <div class="main" >
+        <!--<h2> 用户统计 </h2>-->
+        <div id="main1" class="tjt"> </div>
+    </div>
+    <div class="main" >
+        <!--<h2> 文章链接统计 </h2>-->
+        <div id="main2" class="tjt"> </div>
+    </div>
+    <div class="main" >
+        <!--<h2> 标题链接统计 </h2>-->
+        <div id="main3" class="tjt"> </div>
+    </div>
+
+</div>
+<script>
+
+    window.onload=function(){
+
+        //平台统计
+        cobj = document.getElementById('content');
+
+        var data = cobj.getAttribute('data');
+
+        data = JSON.parse(data);
+
+        var app = echarts.init(document.getElementById('main'));
+
+        app.title = '积分店统计 - 条形图';
+
+        option = {
+            title: {
+                text: '平台统计',
+                subtext: '数据来自后台'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['平台数量', '平台业务数量']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                boundaryGap: [0, 0.1]
+            },
+            yAxis: {
+                type: 'category',
+                data: ['本月平台数','上月平台数','平台总数']
+            },
+            series: [
+                {
+                    name: '平台数量',
+                    type: 'bar',
+                    data: data[0]
+                },
+                {
+                    name: '平台业务数量',
+                    type: 'bar',
+                    data: data[1]
+                }
+            ]
+        };
+
+        app.setOption(option);
+
+
+       //用户统计
+        var app1 = echarts.init(document.getElementById('main1'));
+
+        app1.title = '积分店统计 - 条形图';
+
+        option1 = {
+            title: {
+                text: '用户统计',
+                subtext: '数据来自后台'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['注册用户数', '用户积分(万)','已发奖金']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                boundaryGap: [0, 0.1]
+            },
+            yAxis: {
+                type: 'category',
+                data: ['本月用户','上月用户统计','总用户']
+            },
+            series: [
+                {
+                    name: '注册用户数',
+                    type: 'bar',
+                    data: {$user[0]|json_encode}
+                },
+                {
+                    name: '用户积分(万)',
+                    type: 'bar',
+                    data: {$user[1]|json_encode}
+                },
+                {
+                    name: '已发奖金',
+                    type: 'bar',
+                    data: {$user[2]|json_encode}
+                }
+            ]
+        };
+
+        app1.setOption(option1);
+
+        //链接统计
+        var app2 = echarts.init(document.getElementById('main2'));
+
+        app2.title = '积分店统计 - 条形图';
+
+        option2 = {
+            title: {
+                text: '链接统计',
+                subtext: '数据来自后台'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                }
+            },
+            legend: {
+                data: ['文章链接', '标题链接']
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                boundaryGap: [0, 0.1]
+            },
+            yAxis: {
+                type: 'category',
+                data: ['本月链接','上月链接统计','总链接']
+            },
+            series: [
+                {
+                    name: '文章链接',
+                    type: 'bar',
+                    data: {$news[0]|json_encode}
+                },
+                {
+                    name: '标题链接',
+                    type: 'bar',
+                    data: {$news[1]|json_encode}
+                }
+
+            ]
+        };
+
+        app2.setOption(option2);
+
+       //用户业务统计
+        var app3 = echarts.init(document.getElementById('main3'));
+
+        app3.title="积分店统计";
+
+        option3 = {
+            title : {
+                text: '用户业务状态',
+                subtext: '数据来自后台',
+                x:'center'
+            },
+            color : [
+                    '#0ae',
+                    '#2c7',
+                    '#e33',
+            ],
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['未审核','已通过','已拒绝']
+            },
+            series : [
+                {
+                    name: '审核状态',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:{$check[1]|json_encode}.num, name:'未审核'},
+                        {value:{$check[0]|json_encode}.num, name:'已通过'},
+                        {value:{$check[2]|json_encode}.num, name:'已拒绝'},
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        app3.setOption(option3);
+
+
+
+
+    };
+
+
+</script>
+</body>
+</html>

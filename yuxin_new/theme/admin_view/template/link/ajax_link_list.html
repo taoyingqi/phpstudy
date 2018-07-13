@@ -1,0 +1,19 @@
+{volist name="list" id="jun"}
+<tr>
+    <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />{$jun.id}</td>
+    <td><input type="text" name="sort[1]" value="{$jun.sort}" style="width:50px; text-align:center; border:1px solid #ddd; padding:7px 0;" /></td>
+    <td width="10%"><img src="{$jun.icon}" alt="" width="70" height="50" /></td>
+    <td>
+        <p>{$jun.name}</p>
+    </td>
+    <td><p style="color:#00CC99">{$jun.url}</p></td>
+    <td>{$jun.hits}</td>
+    <td>{$jun.display}</td>
+    <td>{$jun.cate_name}</td>
+    <td><div class="button-group"> <a class="button border-main" href="javascript:" onclick="edit_link({$jun.id})"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(this,{$jun.id})"><span class="icon-trash-o"></span> 删除</a> </div></td>
+</tr>
+{/volist}
+
+<tr>
+    <td colspan="8"><div class="pagelist"> {$page}</div></td>
+</tr>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+    {include file="public:head" /}
+</head>
+<body>
+		<div class="container-fluid">
+			{include file="public:nav" /}
+			<div class="row clearfix context">
+				<div class="col-md-12 column">
+					<div class="breadcrumbs">
+						<span typeof="v:Breadcrumb"><a href="/"  class="home">官网</a></span> &gt; <span><span >{$news_title}</span></span>
+						<a class="back_link" href="javascript:history.go(-1)"> 返回上一页</a>
+					</div>
+				</div>
+				<div class="col-md-12 column">
+					<div style="margin: 0 auto;">
+					   <div style="width: 15%; height: 100%; float: left; ">
+						{include file="public:leftslider"/}
+						</div>
+						<div style="width: 60%;  height: 100%; margin-left:16%; float: left; ">
+
+							<div class="friendly_links">
+								<div class="inner">
+									<div class="maincontent " style=" margin-left: 0px; width: 100%;
+    float: left; 
+    color: #687177;">
+										<h2 style="text-align: center;  margin-bottom: 12px;  ">{$news_title}</h2>
+										<div style="text-align: center;font-size: 18px;color: #555555; margin-bottom: 12px; ">
+											<h3>创建者:管理员  &nbsp;&nbsp;&nbsp; 创建日期:{$news_time|date="Y-m-d",###} </h3>
+										</div>
+
+										{$content}
+
+										<div class="clear"></div>
+										<a href="#header" class="go_top">Top</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="width: 5%; height: 100%; float: left;  ">
+						&nbsp;
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	{include file="public:footer"/}
+	</div>
+	</body>
+</html>

@@ -1,0 +1,696 @@
+[ 2018-06-24T01:30:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T05:06:52+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 26 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T09:17:54+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T09:17:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T09:29:49+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:24:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:37:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('姬越' , 1 , '350102197010230337' , '建设银行' , '6217001820004111310' , '福建省 福州市 鼓楼区' , '852015' , '2018-06-24 10:37:15' , '2018-06-24 10:37:15') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:37:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:38:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/index/index' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_permission` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:38:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:38:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:38:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 407 LIMIT 1 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:43:51+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T10:56:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T11:04:12+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T11:23:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T11:45:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T12:06:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T12:07:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T12:07:39+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T12:07:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:11:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:14:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:17:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('王引兰' , 0 , '620105197112130024' , '建设银行' , '6236684260001475935' , '甘肃省 兰州市 城关区' , 'xSSZ' , '2018-06-24 13:17:58' , '2018-06-24 13:17:58') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:18:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:23:56+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:25:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:25:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:26:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:26:21+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:26:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:27:21+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:27:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:27:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:28:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:28:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:28:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:28:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 408 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:32:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: province3
+
+---------------------------------------------------------------
+[ 2018-06-24T13:52:29+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T13:57:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T14:33:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: province3
+
+---------------------------------------------------------------
+[ 2018-06-24T14:34:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: province3
+
+---------------------------------------------------------------
+[ 2018-06-24T14:52:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T14:52:21+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T14:52:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T14:52:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T15:22:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:28:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:31:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:32:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:33:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:33:29+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:34:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:39:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:39:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:42:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('刘士照' , 1 , '132229196609256199' , '中国农业银行' , '6228480632399224310' , '河北省 石家庄市 晋州市' , '852015' , '2018-06-24 16:42:43' , '2018-06-24 16:42:43') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:43:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:43:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-24T16:43:52+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-24T16:43:59+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-24T16:43:59+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-24T16:44:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:44:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:44:56+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-24T16:45:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:45:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('刘昭' , 1 , '132229196609256199' , '中国农业银行' , '6228480632399224310' , '河北省 石家庄市 晋州市' , '852015' , '2018-06-24 16:45:33' , '2018-06-24 16:45:33') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:46:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:46:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:48:53+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:00+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 410 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 395 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:27+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:39+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 409 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T16:49:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 410 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:01:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:01:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:02:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:03:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('林仁刚' , 1 , '650105197005161912' , '建设银行' , '4367424540600405015' , '新疆维吾尔自治区 乌鲁木齐市 天山区' , '' , '2018-06-24 17:03:29' , '2018-06-24 17:03:29') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:03:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('林仁刚' , 1 , '650105197005161912' , '建设银行' , '4367424540600405015' , '新疆维吾尔自治区 乌鲁木齐市 天山区' , '' , '2018-06-24 17:03:32' , '2018-06-24 17:03:32') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:03:45+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:03:46+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.015626s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:03:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('林仁刚' , 1 , '650105197005161912' , '建设银行' , '4367424540600405015' , '新疆维吾尔自治区 乌鲁木齐市 天山区' , '' , '2018-06-24 17:03:48' , '2018-06-24 17:03:48') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:03:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:04:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:04:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-24T17:04:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:04:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:04:49+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:05:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:05:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:05:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:05:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 413 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:06:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('林仁刚' , 1 , '650105197005161912' , '建设银行' , '4367424540600405015' , '新疆维吾尔自治区 乌鲁木齐市 天山区' , 'xSSZ' , '2018-06-24 17:06:15' , '2018-06-24 17:06:15') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:06:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015626s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:06:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('林仁刚' , 1 , '650105197005161912' , '建设银行' , '4367424540600405015' , '新疆维吾尔自治区 乌鲁木齐市 天山区' , 'xSSZ' , '2018-06-24 17:06:34' , '2018-06-24 17:06:34') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:06:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:07:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T17:28:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-24T20:59:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

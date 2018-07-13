@@ -1,0 +1,14 @@
+{volist name="list" id="jun"}
+<tr>
+    <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$jun.id}" />{$jun.id}</td>
+    <td>{$jun.content}</td>
+    <td style="color:#00CC99">{$jun.plat_income}</td>
+    <td style="color:#00CC99">{$jun.pay_rebate}%</td>
+    <td data-plat-id="{$jun.plat_id}">{$jun.plat_nickname}</td>
+    <td>{$jun.update_time|default="-"}</td>
+    <td><div class="button-group"> <a class="button border-main" href="/admin/plat_business/edit_business.html?id={$jun.id}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="javascript:void(0)" onclick="return del(this,{$jun.id})"><span class="icon-trash-o"></span> 删除</a> </div></td>
+</tr>
+{/volist}
+<tr>
+    <td colspan="8"><div class="pagelist"><div class="jun"> {$page} </div></div></td>
+</tr>

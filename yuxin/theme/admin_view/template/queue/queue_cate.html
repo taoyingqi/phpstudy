@@ -1,0 +1,97 @@
+{extend name="base/base" /}
+
+{block name="content"}
+<div class="panel admin-panel">
+  <div class="panel-head"><strong class="icon-reorder"> 提车档位列表</strong></div>
+  <div class="padding border-bottom">  
+  <a class="button border-yellow" href="#add"><span class="icon-plus-square-o"></span> 添加内容</a>
+  </div> 
+  <table class="table table-hover text-center">
+    <tr>
+      <th width="5%">ID</th>     
+      <th>档位名称</th>
+      <th>档位金额</th>
+      <th width="250">操作</th>
+    </tr>
+   {volist name="pcate" id="jun"}
+    <tr>
+      <td>{$jun.id}</td>
+      <td>{$jun.lname}</td>
+      <td>{$jun.money}</td>
+      <td>
+      <div class="button-group">
+      <a type="button" class="button border-main" href="/admin/queue/edit_cate.html?id={$jun.id}"><span class="icon-edit"></span>修改</a>
+       <a class="button border-red" href="javascript:void(0)" onclick="return del(this,{$jun.id})"><span class="icon-trash-o"></span> 删除</a>
+      </div>
+      </td>
+    </tr> 
+   {/volist}
+    
+  </table>
+</div>
+<script>
+function del(obj,id){
+
+     var o = $(obj);
+    layer.confirm('您确定要删除吗？', {
+        btn: ['确定','取消'] //按钮
+    }, function(){
+        var url = "/admin/queue/del_cate.html?id="+id;
+        $.getJSON(url,function(data){
+            if(data.status == 1)
+            {
+                layer.msg(data.status);
+                o.closest('tr').remove();
+            }
+            else{
+                layer.msg(data.message,function(){});
+            }
+        });
+
+    }, function(){
+        layer.msg('你说取消就取消啊？等20秒', {
+            time: 20000, //20s后自动关闭
+           // btn: ['明白了', '知道了']
+        });
+    });
+
+}
+</script>
+<div class="panel admin-panel margin-top">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加档位</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="">
+
+      <div class="form-group">
+        <div class="label">
+          <label>提车档位名称：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="cate_name" value="" placeholder="50W" data-validate="required:请输入档位名称" />
+          <div class="tips"></div>
+        </div>
+      </div> 
+
+      <div class="form-group">
+        <div class="label">
+          <label>档位金额：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="money" value="" placeholder="500000"  data-validate="required:,number:档位金额必须为数字" />
+          <div class="tips"></div>
+        </div>
+      </div>
+
+     <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+            <input type="hidden" id="submit_url" value="/admin/queue/add_cate.html">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{/block}

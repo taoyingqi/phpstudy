@@ -1,0 +1,6 @@
+<select name="plat_city{$level}" id="plat_city{$level}" class="input w50" style="width:20%">
+<option value="">请选择地区</option>
+    {volist name="select2" id="jun"}
+<option value="{$jun.id}|{$jun.level}">{$jun.name}</option>
+     {/volist}
+</select>

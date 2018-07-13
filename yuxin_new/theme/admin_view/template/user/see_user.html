@@ -1,0 +1,148 @@
+{extend name="base/base" /}
+{block name="content"}
+<div class="panel admin-panel">
+<div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 查看用户 </strong></div>
+                                                                                          <div class="body-content">
+<form method="post" class="form-x" action="#">
+
+
+
+ <div class="form-group">
+        <div class="label">
+        <label>用户姓名 ：</label>
+           </div>
+               <div class="field">
+                <input type="text" class="input w50" style="width:50%"  disabled value="{$user.truename}" />
+                <div class="tips"></div>
+            </div>
+ </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>性别 ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%" disabled value="{$user.sex}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>身份证号 ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%" disabled value="{$user.cardcode}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>开户银行 ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%" disabled value="{$user.bankname}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>开户行所在地 ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%" disabled value="{$user.bankaddr}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>银行卡号 ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%"  disabled value="{$user.bankcode}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>邮箱 ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%" disabled value="{$user.email}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+    <div class="label">
+        <label>手机号 ：</label>
+    </div>
+    <div class="field">
+        <input type="text" class="input w50" style="width:50%" disabled name="mobile" value="{$user.mobile}" />
+        <div class="tips"></div>
+    </div>
+       </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>推荐码(邀请人) ：</label>
+        </div>
+        <div class="field">
+            <input type="text" class="input w50" style="width:50%" disabled name="pass" value="{$user.refcode}" />
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>身份证正面 ：</label>
+        </div>
+        <div class="field">
+             <div>
+                 <img src="{$user.cardtop}" style="width: 350px;height: 200px" alt="">
+             </div>
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>身份证反面 ：</label>
+        </div>
+        <div class="field">
+            <div>
+                <img src="{$user.cardback}" style="width: 350px;height: 200px" alt="">
+            </div>
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="label">
+            <label>银行卡照片 ：</label>
+        </div>
+        <div class="field">
+            <div>
+                <img src="{$user.bankimg}" style="width: 350px;height: 200px" alt="">
+            </div>
+            <div class="tips"></div>
+        </div>
+    </div>
+
+    <div class="form-group">
+<div class="label">
+<label></label>
+         </div>
+           <div class="field">
+               <input type="hidden" id="submit_url" value="/admin/user/do_add_user.html">
+<!--<button class="button bg-main icon-check-square-o" type="submit"> 提交 </button>-->
+           </div>
+       </div>
+    </form>
+      </div>
+        </div>
+          {/block}

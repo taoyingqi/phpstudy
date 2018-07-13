@@ -1,0 +1,1493 @@
+[ 2018-06-08T01:26:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T02:44:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T02:52:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T07:15:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T07:15:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T08:21:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T08:45:46+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:19:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_admin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_admin` WHERE  `name` = 'ldjun'  AND `password` = '123123' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tc_admin`  SET `login_time`=1528420749  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_perm_group` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `perm_ids` FROM `tc_perm_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:19:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/index/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_permission` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:21:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:21:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:21:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:22:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 340 LIMIT 1 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:23:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 341 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:23:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:23:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:25:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('刘少波' , 1 , '430381198801133016' , '深圳市宝安支行' , '6214920402264756' , '广东省 深圳市 宝安区' , '' , '2018-06-08 09:25:28' , '2018-06-08 09:25:28') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:25:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:25:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:25:45+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:25:49+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 343 LIMIT 1 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:25:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:00+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('刘少波' , 1 , '430381198801133016' , '深圳市宝安支行' , '6214920402264756' , '广东省 深圳市 宝安区' , '' , '2018-06-08 09:26:02' , '2018-06-08 09:26:02') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:07+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.015624s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 344 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:26:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:28:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:28:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:28:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:29:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('刘少波' , 1 , '430381198801133016' , '深圳市宝安支行' , '6214920402264756' , '广东省 深圳市 宝安区' , 'x SS z' , '2018-06-08 09:29:55' , '2018-06-08 09:29:55') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 345 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:44+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.031250s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('刘少波' , 1 , '430381198801133016' , '深圳市宝安支行' , '6214920402264756' , '广东省 深圳市 宝安区' , 'x SS z' , '2018-06-08 09:30:44' , '2018-06-08 09:30:44') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:30:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:31:49+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:31:52+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:45:56+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:46:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:46:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:56:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T09:56:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.015624s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:04:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:04:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:04:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:04:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:23:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:23:59+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:24:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:25:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:30:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_admin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_admin` WHERE  `name` = 'ldjun'  AND `password` = '123123' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tc_admin`  SET `login_time`=1528425982  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_perm_group` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `perm_ids` FROM `tc_perm_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/index/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_permission` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 30,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 324 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:42+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:44+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 322 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:46+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 323 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 316 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 317 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:53+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 318 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 311 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:46:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 312 [ RunTime:0.015624s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:00+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 313 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 321 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 321 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 313 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:04+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:08+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/index/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_permission` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/index/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_permission` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:35+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.002930s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.031249s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 315 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/del_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM `tc_user`    WHERE  `id` = 314 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:47:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:48:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:48:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:48:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:48:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:49:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:49:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 343 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:55:59+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T10:56:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:01:14+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:02:00+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:02:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:02:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:02:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.015624s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:02:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:02:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:10:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:10:27+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:13:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:14:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:21:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:21:53+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:51+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:53+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:56+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:50:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:51:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:51:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:51:52+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:51:59+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:52:48+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:53:34+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:53:36+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:55:26+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T11:55:32+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:07:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:08:21+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:08:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:09:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:31:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:32:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:41:44+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T12:41:46+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T13:01:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T13:34:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T13:34:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:04:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:04:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:12:16+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:12:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:14:23+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:16:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:16:13+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:17:09+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:28:11+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:28:12+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:50:24+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:50:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:51:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:51:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:57:44+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T14:57:47+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:00:29+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:00:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:11:54+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:11:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:16:10+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:16:59+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:17:01+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:23:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:23:45+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T15:50:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:14:03+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:17:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:20:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('宋光欲' , 1 , '420625198806276810' , '建设银行祥和苑子行' , '6236682870008193257' , '湖北省 武汉市 武昌区' , '852015' , '2018-06-08 16:20:28' , '2018-06-08 16:20:28') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:20:31+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:21:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-08T16:21:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: bankaddr
+
+---------------------------------------------------------------
+[ 2018-06-08T16:22:33+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:23:45+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] INSERT INTO `tc_user` (`truename` , `sex` , `cardcode` , `bankname` , `bankcode` , `bankaddr` , `refcode` , `adtime` , `uptime`) VALUES ('宋光欲' , 0 , '420625198806276810' , '建设银行祥和苑支行' , '6236682870008193257' , '湖北省 武汉市 洪山区' , '852015' , '2018-06-08 16:23:45' , '2018-06-08 16:23:45') [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:23:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:23:55+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:23:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:24:05+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/see_user' LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` WHERE  `id` = 347 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:25:18+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:48:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:49:20+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:49:22+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:50:15+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.015625s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T16:50:17+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:02:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:02:38+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:02:40+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:05:41+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:05:43+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:05:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:05:53+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:06:02+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:08:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:08:58+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:20:50+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:20:51+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:32:25+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:32:27+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:39:04+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:39:06+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.015626s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:40:27+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:40:28+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 10,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:40:30+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:41:35+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T17:41:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015626s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T18:01:56+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 0,10 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T18:01:57+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/user/show_user_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_user` LIMIT 20,10 [ RunTime:0.015624s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T18:12:37+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-06-08T21:05:19+08:00 ] [ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+		{include file="public:head" /}	
+    <meta charset="utf-8">
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+		
+</head>
+<div class="container-fluid">
+			{include file="public:nav" /}
+			<div onclick="check()" style="width: 100%;height: 400px;background-color:#1D1D1D; margin:0px;">
+				<img src="{$yf_theme_path}public/images/631133268174329433.jpg" style="margin:0px;border:0px;height: 110%;width: 110%; ">
+			</div>
+<div class="row clearfix context">
+	<div class="col-md-12 column">
+		<div style="margin: 0 auto;min-width: 1100px;">
+			<div style="width: 20%; height: 100%; float: left; ">
+			{include file="public:leftslider"/}
+			</div>
+			<div style="width: 60%; height: 100%;margin-left:150px;float: left; ">
+				<div class="friendly_links">
+					<div class="inner">
+						<div class="maincontent " style=" margin-left: 0px; width: 100%; float: left; color: #687177;">
+							<center id="contacts">
+							<p><br></p>
+							<p class="center"><br></p>
+							<p class="center"><img src="{$yf_theme_path}public/images/7,8e29d923c5b1.jpg"></p>
+							<p><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">&nbsp;</span><br></p>
+							<p><br></p>
+							<h2 class="ccompany">{:lang('Corporate headquarters')}</h2>
+							<div class="contact_us_row addr"><br>
+							<div class="address_section contact_us_icon_list addrdiv">
+							<p class="addrp">
+							<span class="add_icon_1 addrspan">{:lang('address')}：<span class="addrsspan">{$site_address}</span></span>
+							<span class="add_icon_2 iphone" >{:lang('phone')}：{$site_tel}</span>
+							</p>
+							</div></div>
+							</center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+{include file="public:footer" /}
+</body>
+</html>

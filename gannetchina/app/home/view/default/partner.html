@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+		{include file="public:head" /}	
+    <meta charset="utf-8">
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+		
+</head>
+<div class="container-fluid">
+			{include file="public:nav" /}
+			<div onclick="check()" style="width: 100%;height: 400px;background-color:#1D1D1D; margin:0px;">
+				<img src="{$yf_theme_path}public/images/631133268174329433.jpg" style="margin:0px;border:0px;height: 110%;width: 110%; ">
+			</div>
+<div class="row clearfix context">
+	<div class="col-md-12 column">
+		<div style="margin: 0 auto;min-width: 1100px;">
+			<div style="width: 20%; height: 100%; float: left; ">
+			{include file="public:leftslider"/}
+			</div>
+			<div style="width: 60%; height: 100%;margin-left:150px;float: left; ">
+				<div class="friendly_links">
+					<div class="inner">
+						<div class="maincontent " style=" margin-left: 0px; width: 100%; float: left; color: #687177;">
+						{if condition="$lang eq 'zh-cn'"}
+							<p><br></p><p><br></p>
+							<p style="text-align: center;"><h2><strong>合作伙伴</strong></h2><br></p><p style="text-align: center;"><br></p><p style="text-indent: 32px;line-height: 24px"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px"></span></p>
+							<div class="">
+								<img style="width: 100%; " src="{$yf_theme_path}public/images/bankparter.png" alt="">
+							</div>
+							<p style="text-indent: 32px;line-height: 24px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><br></span></p><p style="text-indent: 32px;line-height: 24px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><br></span></p>
+							<p><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">&nbsp; &nbsp; &nbsp; 存款资金安全可靠</span></strong></p>
+							<p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px"><br></span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">我们承诺并保证：</span></p><p style="text-align: left;"><br></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">1.所有投资者受金融工具市场法规条例的保护（MIFID）</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">2.根据监管规定，为了降低投资风险，我们把所有客户分类并且帮助他们评估</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">3.与多家一线银行和顶级流通性提供商合作，使我们拥有最好的点差</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">4.根据最佳的执行政策为客户执行订单交易</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">5.确保所有订单和交易拥有最快执行速度和最高透明度</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">6.根据无重复报价和无额外佣金的政策可以避免客户的投资受到不利影响</span></p>
+							<p><br></p>
+							 {else /}
+							<p><br></p><p><br></p>
+							<p style="text-align: center;"><h2><strong>Partner</strong></h2><br></p><p style="text-align: center;"><br></p><p style="text-indent: 32px;line-height: 24px"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px"></span></p>
+							<div class="">
+								<img style="width: 100%; " src="{$yf_theme_path}public/images/bankparter.png" alt="">
+							</div>
+							<p style="text-indent: 32px;line-height: 24px"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;"><br></span></p>
+							<p><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;; font-size: 16px;">&nbsp; &nbsp; &nbsp; Deposit funds safe and reliable</span></strong></p>
+							<p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px"><br></span></p><p><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">We promise and guarantee:</span></p><p style="text-align: left;"><br></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">1. All Investors Are Protected by the Rules and Regulations of the Financial Instruments Market (MIFID)</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">2. According to regulatory requirements, in order to reduce the investment risk, we classify all our customers and help them evaluate</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">3. Work with multiple front-line banks and top liquidity providers to give us the best spreads</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">4. Execute the order transaction for the customer according to the best execution policy</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">5. Ensure that all orders and transactions have the fastest execution speed and the highest degree of transparency</span></p>
+							<p style="padding-top: 5px; padding-bottom: 5px; line-height: 21.6px; color: rgb(51, 51, 51); white-space: normal;"><span style="font-family:微软雅黑, Microsoft YaHei;font-size:16px">6. Avoidance of client's investment is adversely affected by the policy of no double quotation and no additional commission</span></p>
+							<p><br></p>
+							{/if}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+{include file="public:footer" /}
+</body>
+</html>

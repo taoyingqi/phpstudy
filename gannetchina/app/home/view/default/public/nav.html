@@ -1,0 +1,60 @@
+<!--描述：头部-->
+			<div id="header">
+				<div class="top_bar" style=" border-bottom: 1px solid #878787; ">
+					<div class="inner">
+						<div class="left_box">
+							<ul>
+								<li class="phone">
+									<!--<a href="tel:4001209301"><span></span> <span class="phone_num" id="content1"></span></a>-->
+								</li>
+							</ul>
+						</div>
+						<div class="right_box">
+							<a href="https://download.mql5.com/cdn/web/11427/mt4/gannetcapital4setup.exe" target="_blank"  class="button button_gray" style="background: blue"  ><span class="phone_num" >{:lang('download MT4')}</span></a>
+							<a href="http://trader.gannetchina.com/login" target="_blank"  class="button button_gray" style="background: green"  ><span class="phone_num" >{:lang('login')}</span></a>
+							<a href="http://trader.gannetchina.com/register" target="_blank"  class="button button_red" style="background: #bf1e2e;"  ><span class="phone_num" >{:lang('live account')}</span></a>
+							<a href="http://trader.gannetchina.com/registerMock" target="_blank"  class="button button_purple" style="background: #742f88;"  ><span class="phone_num" >{:lang('demo account')}</span></a>
+							<a href="http://broker.gannetchina.com" target="_blank"  class="button button_purple" style="background: #27456B;"  ><span class="phone_num" >{:lang('brokers login')}</span></a>
+							<select class="select" style=" padding-right: 20px; background-color:#34352C; color: #FFFFFF;  display: inline;width: 110px;" name="lang_s" id="selectchange" onChange="change()">
+								<option value="cn"  {if condition="$lang eq 'zh-cn'"}selected = "selected"{/if}>{:lang('langcn')}</option>
+								<option value="en"  {if condition="$lang eq 'en-us'"}selected = "selected"{/if}>{:lang('langen')}</option>
+							</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						</div>
+					</div>
+				</div>
+				<div class="menu_box " style="height:100px">
+					<!-- <div class="menu_box_top_bar" style="position: absolute;    left: 0px;    top: -10px;    height: 25px;    width: 100%;background: url({$yf_theme_path}public/images/bg_menu_box_top_bar.png) center top no-repeat;"></div> -->
+					<div class="inner">
+						<!--<images style="width: 265px;   position: absolute; left:0px; top: -11px;  height: 103px; " src="{$yf_theme_path}public/images/new_year_2017_logo.png" alt="">-->
+						<div class="nav">
+							<div class="nav_inner" style="height: 45px; margin-top:5px; ">
+							<!-- <li><a href="/" class="sf-with-ul" style="width: 280px;height: 45px; margin-top:5px;display: inline;"><img style=" width: 269px;  height: 70px; position: absolute; left:0px; top: -11px;   " src="{$site_logo|get_imgurl}" alt=""></a></li> -->
+							{yf:menu top_ul_id="menu-header-menu" top_ul_class="mainnav sf-js-enabled sf-shadow" child_li_class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children" child_ul_class="sub-menu" }
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+						<!--描述：头部下滑显示-->
+
+			<div class="fixed_header">
+				<div class="inner">
+					<ul class="fixed_header_left_links">
+						<li>
+							<a class="qq_link" href=""><img src="{$yf_theme_path}public/images/qq_icon.png" alt=""> <span class="phone_num">{:lang('Live chat')}</span></a>
+						</li>
+						<li>
+							
+						</li>
+					</ul>
+					<a id="logo" href="#" title="">
+						<h1 class="logo"></h1></a>
+					<div class="right_box">
+						<a href="{$site_host}lxcrm/RegisterRealAccount.php" target="_blank"  style="background: #d21218;" class="button button_red"><span class="phone_num">{:lang('live account')}</span></a>
+						
+						<a href="{$site_host}lxcrm/RegisterLeadAccount.php" target="_blank"  style="background: #742f88;" class="button button_purple"><span class="phone_num">{:lang('demo account')}</span></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>

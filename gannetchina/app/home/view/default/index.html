@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+   <title>{$site_seo_title} {$site_name}</title>
+   <meta name="keywords" content="{$site_seo_keywords}" />
+   <meta name="description" content="{$site_seo_description}">
+   {include file="public:head" /}
+							
+		<script>
+		
+			function openHtml(aa) {
+			 	window.open (aa, "客服", "height=300, width=600, top=100, left=500, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no");
+			}
+		</script>
+		<script>
+			//轮播图自动轮播效果
+			$(document).ready(function() {
+				ope();
+				var aa = "no";
+				if(aa == "yes"){
+					changeOne();
+				}
+				$('#myCarousel').carousel({ interval: 14000 }); //每隔16秒自动轮播 
+				
+			});
+			
+			function clo(){
+				 var myVideo = document.getElementsByTagName('video')[0];
+ 				 myVideo.currentTime = 0;
+				myVideo.pause();
+			}
+			
+			function ope(){
+				var myVideo = document.getElementsByTagName('video')[0];
+				if(myVideo.paused){
+			            myVideo.play();
+				}	
+			}
+			
+			$(document).ready(function() {
+				$('#usel').carousel({ interval: 2000 }); //每隔2秒自动轮播 
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			{include file="public:nav" /}
+
+			<!--描述：轮播图-->
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active" onclick="ope()"></li>
+						<li data-target="#myCarousel" data-slide-to="1"  onclick="clo()"></li>
+						<li data-target="#myCarousel" data-slide-to="2"  onclick="clo()"></li>
+						<li data-target="#myCarousel" data-slide-to="3"  onclick="clo()"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active" style="overflow:hidden">
+							<img class="alignnone size-full wp-image-30372" style="height: auto;width: 100%" src="{$yf_theme_path}public/images/one_banner.jpg" alt="new_year_home_banner_images">
+					</div>
+						<div class="item">
+							<img class="alignnone size-full wp-image-30372" style="height: auto;width: 100%" src="{$yf_theme_path}public/images/6,8e16ceec54e1.jpg" alt="new_year_home_banner_images">
+						</div>
+						<div class="item">
+							<img class="alignnone size-full wp-image-30372" style="height: auto;width: 100%" src="{$yf_theme_path}public/images/3,8e1886ae9f06.jpg" alt="new_year_home_banner_images">
+						</div>
+						<div class="item">
+							<img class="alignnone size-full wp-image-30372" style="height: auto;width: 100%" src="{$yf_theme_path}public/images/5,8e1bc7e2546c.jpg" alt="new_year_home_banner_images">
+						</div>
+
+				</div>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;
+				</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;
+				</a>
+				<div class="slider_link" style="right: 30px;" >
+
+					<div class="slider_link_inner" style=" bottom: 190px;right: 20px;">
+
+						<h3><!--你想成为下一个索罗斯么？--></h3>
+
+						<a href="http://trader.gannetchina.com/register" target="_blank" class="link_open_account" ><span>{:lang('live account')}</span></a>
+
+						<a href="http://trader.gannetchina.com/registerMock" target="_blank" class="link_trial_demo"><span>{:lang('demo account')}</span></a>
+						<div class="clear"></div>
+					</div>
+
+				</div>
+
+			</div>
+			<!--描述：轮播图下方列表-->
+			<div class="home_slider_bottom">
+
+				<div class="inner">
+
+					<div class="item item1">
+
+						<span class="num">{$site_datanum_tnum}</span>
+
+						<span class="text" >{:lang('index_num1')}</span>
+
+					</div>
+
+					<div class="item item3">
+
+						<span class="num">{$site_datanum_lever}</span>
+
+						<span class="text" >{:lang('index_num2')}</span>
+
+					</div>
+
+					<div class="item item4">
+
+						<span class="num">${$site_datanum_poorlow}</span>
+
+						<span class="text" >{:lang('index_num3')}</span>
+
+					</div>
+
+					<div class="item item5">
+
+						<span class="num">${$site_datanum_fropacc}</span>
+
+						<span class="text" >{:lang('index_num4')}</span>
+
+					</div>
+
+					<div class="item item6">
+
+						<span class="num">${$site_datanum_minidispos}</span>
+
+						<span class="text" >{:lang('index_num5')}</span>
+
+					</div>
+
+				</div>
+
+			</div>
+			<br/>
+			<!--描述：内容-->
+			<div class="row clearfix context">
+				<div class="col-md-12 column ">
+					<div class="row clearfix">
+						<div class="col-md-1 column">
+						</div>
+						<div class="col-md-5 column">
+							<div class="home_news_box">
+								<div class="inner">
+									<div class="home_news_title">
+										<h2>{:lang('announcement')}</h2></div>
+									<div>
+										<div id="itemadd" class="item ">
+											<div class="images"><img width="100%" style="height:135px" src="{$yf_theme_path}public/images/home_news_img_03.jpg" class="attachment-home_news_images size-home_news_images"></div>
+											<div class="title">
+												<a href="{:url('home/Listn/index',array('id'=>'2'))}" style="height:28px" class="more">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<ul>
+											{foreach name="annment" item="vo"}
+												<li>
+													<div>
+													<a style="float: left;" href="{:url('home/News/index',array('id'=>$vo['n_id']))}">{$vo.news_title|msubstr=0,20}</a><span style="float: right;">{$vo.news_time||date="Y-m-d H:i",###}</span>
+													</div>
+												</li>
+											{/foreach}		
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 column">
+							<div class="home_news_box">
+								<div class="inner">
+									<div class="home_news_title">
+										<h2 >{:lang('real time quotes')}</h2></div>
+									<div>
+										<div id="market_rates" style="box-shadow: inset 0 20px 50px #CCCCCC;background: #FFFFFF; color: #000000;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-1 column">
+						</div>
+					</div>
+					<!--<div class="row clearfix context">
+						</div>-->
+				</div>
+
+				<div class="col-md-12 column">
+					<div class="col-md-1 column">
+					</div>
+					<div class="col-md-10 column">
+						<div id="usel" class="carousel slide" style="height: 300px;"> 
+							<ol class="carousel-indicators">
+								<li data-target="#usel" data-slide-to="0" class="active"></li>
+								<li data-target="#usel" data-slide-to="1"></li>
+								<li data-target="#usel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<img style="width: 100%; height: 300px;" class="alignnone size-full wp-image-30372"   src="{$yf_theme_path}public/images/1.jpg" alt="new_year_home_banner_images">
+								</div>
+								<div class="item">
+									<img style="width: 100%; height: 300px;" class="alignnone size-full wp-image-30372"   src="{$yf_theme_path}public/images/2.jpg" alt="new_year_home_banner_images">
+								</div>
+								<div class="item">
+									<img style="width: 100%; height: 300px;" class="alignnone size-full wp-image-30372"  src="{$yf_theme_path}public/images/3.jpg" alt="new_year_home_banner_images">
+								</div>
+							</div>
+							<a class="carousel-control left" href="#usel" data-slide="prev">&lsaquo;</a>
+							<a class="carousel-control right" href="#usel" data-slide="next">&rsaquo;</a>  
+						</div>
+					</div>
+						<div class="col-md-1 column">
+					</div>
+				</div>
+
+				<div class="col-md-12 column">
+					<div class="col-md-1 column">
+					</div>
+					<div class="col-md-10 column">
+						<div class="home_news_box">
+							<div class="inner">
+								<div class="home_news_title">
+									<h2 >{:lang('Foreign news')}</h2>
+								</div>
+								<div>
+										<div class="item">
+											<div class="images">
+												<img width="298" style="height:135px;" src="{$yf_theme_path}public/images/5,8e1ee54f7829.png" class="attachment-home_news_images size-home_news_images">
+											</div>
+											<div class="title ">{:lang('Important Data')}
+												<a href="{:url('home/Listn/index',array('id'=>'16'))}" class="more">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<div>
+												<ul>
+												{foreach name="fnew_data" item="vo"}
+														<li>
+															<a href="{:url('home/News/index',array('id'=>$vo['n_id']))}"><div style="width:50%; float:left; text-overflow:ellipsis; overflow:hidden;">{$vo.news_title|msubstr=0,20}</div><div style="width:10%; float:left;">&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="float:right;">{$vo.news_time||date="Y-m-d H:i",###}</div></a>
+														</li>
+												{/foreach}
+												</ul>
+											</div>
+										</div>
+										<div class="item">
+											<div class="images">
+												<img width="298" style="height:135px;" src="{$yf_theme_path}public/images/3,8e1c3ea75241.jpg" class="attachment-home_news_images size-home_news_images">
+											</div>
+											<div class="title ">{:lang('Todays News')}
+												<a href="{:url('home/Listn/index',array('id'=>'17'))}" class="more">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<div>
+												<ul>
+												{foreach name="fnew_today" item="vo"}
+														<li>
+															<a href="{:url('home/News/index',array('id'=>$vo['n_id']))}"><div style="width:50%; float:left; text-overflow:ellipsis; overflow:hidden;">{$vo.news_title|msubstr=0,20}</div><div style="width:10%; float:left;">&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="float:right;">{$vo.news_time||date="Y-m-d H:i",###}</div></a>
+														</li>
+												{/foreach}
+												</ul>
+											</div>
+										</div>
+										<div class="item">
+											<div class="images">
+												<img width="298" style="height:135px;" src="{$yf_theme_path}public/images/7,8e1d099b26d1.png" class="attachment-home_news_images size-home_news_images">
+											</div>
+											<div class="title ">{:lang('Todays Analysis')}
+												<a href="{:url('home/Listn/index',array('id'=>'18'))}" class="more">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<div>
+												<ul>
+												{foreach name="fnew_anly" item="vo"}
+														<li>
+															<a href="{:url('home/News/index',array('id'=>$vo['n_id']))}"><div style="width:50%; float:left; text-overflow:ellipsis; overflow:hidden;">{$vo.news_title|msubstr=0,20}</div><div style="width:10%; float:left;">&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="float:right;">{$vo.news_time||date="Y-m-d H:i",###}</div></a>
+														</li>
+												{/foreach}
+												</ul>
+											</div>
+										</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 column">
+					</div>
+				</div>
+
+				<div class="col-md-12 column">
+					<div class="col-md-1 column">
+					</div>
+					<div class="col-md-10 column">
+
+						<div class="home_news_box ">
+							<div class="inner ">
+
+								<div class="home_news_title ">
+									<h2 >{:lang('Learning Center')}</h2>
+								</div>
+								<div>
+
+										<div class="item ">
+											<div class="images ">
+												<img width="298 " style="height:135px;" src="{$yf_theme_path}public/images/3,8e270ed84dbd.png" class="attachment-home_news_images size-home_news_images ">
+											</div>
+											<div class="title ">{:lang('Forex Knowledge')}
+												<a href="{:url('home/Listn/index',array('id'=>'19'))}" class="more ">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<div>
+												<ul>
+												{foreach name="lear_know" item="vo"}
+														<li>
+															<a href="{:url('home/News/index',array('id'=>$vo['n_id']))}"><div style="width:50%; float:left; text-overflow:ellipsis; overflow:hidden;">{$vo.news_title|msubstr=0,20}</div><div style="width:10%; float:left;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="float:right;">{$vo.news_time||date="Y-m-d H:i",###}</div></a>
+														</li>
+												{/foreach}
+												</ul>
+											</div>
+										</div>
+										<div class="item ">
+											<div class="images ">
+												<img width="298 " style="height:135px;" src="{$yf_theme_path}public/images/7,8e260d7ebc78.png" class="attachment-home_news_images size-home_news_images ">
+											</div>
+											<div class="title ">{:lang('Tutorial Download')}
+												<a href="{:url('home/Listn/index',array('id'=>'20'))}" class="more ">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<div>
+												<ul>
+												{foreach name="lear_down" item="vo"}
+														<li>
+															<a href="{:url('home/News/index',array('id'=>$vo['n_id']))}"><div style="width:50%; float:left; text-overflow:ellipsis; overflow:hidden;">{$vo.news_title|msubstr=0,20}</div><div style="width:10%; float:left;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="float:right;">{$vo.news_time||date="Y-m-d H:i",###}</div></a>
+														</li>
+												{/foreach}
+												</ul>
+											</div>
+										</div>
+										<div class="item ">
+											<div class="images ">
+												<img width="298 " style="height:135px;" src="{$yf_theme_path}public/images/1,8e242cfc6242.png" class="attachment-home_news_images size-home_news_images ">
+											</div>
+											<div class="title ">{:lang('Video Tutorial')}
+												<a href="{:url('home/Listn/index',array('id'=>'21'))}" class="more ">&gt;&gt;{:lang('more')}</a>
+											</div>
+											<div>
+												<ul>
+												{foreach name="lear_video" item="vo"}
+														<li>
+															<a href="{:url('home/News/index',array('id'=>$vo['n_id']))}"><div style="width:50%; float:left; text-overflow:ellipsis; overflow:hidden;">{$vo.news_title|msubstr=0,20}</div><div style="width:10%; float:left;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><div style="float:right;">{$vo.news_time||date="Y-m-d H:i",###}</div></a>
+														</li>
+												{/foreach}
+												</ul>
+											</div>
+										</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 column">
+					</div>
+				</div>
+</div>
+
+			<div class="row clearfix context" style="border-top: 2px solid #444444;border-bottom:2px solid #444444;">
+				<div class="col-md-12 column" style="padding-bottom: 0px;">
+					<div class="col-md-1 column">
+					</div>
+					<div class="col-md-10 column">
+
+						<div class="partners_and_governance">
+
+							<div class="inner">
+
+								<div class="partners_box"  style="border-right: 1px solid #444444;">
+
+									<div class="partners_box_inner">
+
+										<h3 >{:lang('Liquidity partners')}</h3>
+
+										<div class="partners_list">
+											<div id="myCarousel1" class="carousel slide">
+
+												<div class="carousel-inner">
+												{php}
+												$partners=array_filter(explode(",", $site_partener));
+												{/php}
+												{foreach name="partners" item="voo" key="k"}
+													<div class="item {if condition='$k eq 0'}active{/if}">
+														<img style="height: 100px; " src="{$voo|get_imgurl}" alt="">
+													</div>
+													{/foreach}
+												</div>
+
+												<!-- <ol class="carousel-indicators" style="top: 110px; "> -->
+													<!-- <li data-target="#myCarousel1" style="width: 10px; border: 1px solid #000000;" data-slide-to="0" class="active"></li> -->
+													<!-- <li data-target="#myCarousel1" style="width: 10px; border: 1px solid #000000;" data-slide-to="1"></li> -->
+												<!-- </ol> -->
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="governance_box">
+
+									<div class="governance_box_inner">
+
+										<h3 >{:lang('Corporate governance')}</h3>
+
+										<div class="governance_row">
+
+											<div class="governance_row">
+												<!--<div style="width: 33%">
+												<images src="{$yf_theme_path}public/images/TIM截图20170310232006.png" style="height: 200px;width: 100%" alt="">
+												<div align="center">VFSC</div>
+											</div>-->
+												<a href="">
+												<div style="width: 100%">
+													<img src="{$yf_theme_path}public/images/TIM截图20170310232006.png" style="height: 100px;" alt="">
+												</div>
+												</a>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="clear"></div>
+
+							</div>
+
+						</div>
+					</div>
+					<div class="col-md-1 column">
+					</div>
+				</div>
+</div>
+			
+			<div class="row clearfix context">
+			<div class="col-md-12 column">
+					<div class="col-md-1 column">
+					</div>
+					<div class="col-md-10 column">
+
+						<div class="friendly_links">
+							<div class="inner">
+								<h2 >{:lang('Friendship link')}</h2>
+								<div class="friendly_links_list">
+									<ul>
+									<?php 
+										for($i=1;$i<6;$i++){
+										$name='site_fdlink_'.$i;
+										$domain='site_fdlink_link'.$i;
+										?>
+										{if  !empty($$name)}
+										<li>
+											<a href="http://{$$domain}" target="_blank"><span >{$$name}</span></a>
+										</li>
+										{/if}
+										<?php  }?>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 column">
+					</div>
+				</div>
+
+			</div>
+{include file="public:footer"/}
+		</div>
+
+		<style>
+			.body_right_button.contact_right_fixed {
+				border-rodius: 0;
+				width: 86px;
+				height: 98px;
+				padding: 0px;
+				margin: 0px;
+				text-indent: -9999em;
+			}
+			
+			.body_right_button.contact_right_fixed images {
+				/*opacity: 0;*/
+			}
+			
+			.body_right_button.contact_right_fixed br {
+				display: none;
+			}
+			
+			.body_right_button.qq_right_fixed {
+				background: url({$yf_theme_path}public/images/body_right_button_icon2.png) left top no-repeat;
+				border-rodius: 0;
+				width: 86px;
+				height: 98px;
+				padding: 0px;
+				margin: 0px;
+				text-indent: -9999em;
+				top: 374px;
+			}
+			
+			.body_right_button.qq_right_fixed images {
+				opacity: 0;
+			}
+			
+			.body_right_button.qq_right_fixed br {
+				display: none;
+			}
+			.body_right_button.contact_right_fixed.WX {
+				right:-96px;width: 182px;border: 0 none;
+				webkit-transition: right linear 500ms;
+			    -moz-transition:right linear 500ms;
+			    -ms-transition:right linear 500ms;
+			    -o-transition:right linear 500ms;
+			    transition:right linear 500ms;
+			}
+			.body_right_button.contact_right_fixed.WX:hover,.body_right_button.contact_right_fixed.WX:focus,.body_right_button.contact_right_fixed.WX.select {right:0;}
+		</style>
+		<a class="body_right_button contact_right_fixed" style="top: 229px;background:url({$yf_theme_path}public/images/body_right_button_icon1.png) left top no-repeat;" href="/contacts.html"></a>
+
+		<a class="body_right_button contact_right_fixed" style="top: 329px;background:url({$yf_theme_path}public/images/body_right_button_icon2.png) left top no-repeat;" onclick="openHtml('http://wpa.qq.com/msgrd?v=3&uin=2896227716&site=qq&menu=yes')" href="#"></a>
+		<a class="body_right_button contact_right_fixed WX" style="height: 200px; top: 429px;background:url({$yf_theme_path}public/images/body_right_button_icon3.png) no-repeat left top;padding-left: 96px;" >
+			<img src="{$site_qrcode|get_imgurl}" alt="" style="width:96px;height:96px; display: block;overflow: hidden; float: left;">
+		</a>
+		<script type="text/javascript">
+			(function() {
+				var clientUrl = "https://developers.sirixtrader.com";
+				var js = document.createElement('script');
+				js.type = 'text/javascript';
+				js.async = true;
+				js.src = clientUrl + '/PageScripts/GetJavaScript/?files=Framework.jQuery.js;Framework.jQuery.Tpl.js;RatesEngine.js;MarketRates.Grid.Widget.js&callback=window.onMarketRatesWidgetLoad';
+				document.getElementsByTagName('head')[0].appendChild(js);
+
+				var css = document.createElement('link');
+				css.type = 'text/css';
+				css.async = true;
+				css.rel = 'stylesheet';
+				css.href = clientUrl + '/PageScripts/Getcss/?files=MarketRates.Grid.Widget.css';
+				document.getElementsByTagName('head')[0].appendChild(css);
+				onMarketRatesWidgetLoad = function() {
+					$('#market_rates').leverateMarketRatesGrid({
+						socialWidgetClientUrl: clientUrl,
+						showSpread: false,
+						groups: {
+							Forex: [{
+									name: 'EURUSD',
+									precision: 3
+								}, 'GBPUSD',
+								'EURUSD',
+								'USDJPY',
+								'GBPJPY',
+								'USDCAD',
+								'AUDUSD',
+								'EURGBP',
+								'EURAUD',
+								'EURCHF',
+								'EURJPY',
+								'GBPCHF',
+								'CADJPY',
+								'AUDNZD',
+								'AUDCAD',
+								'AUDCHF',
+								'AUDJPY',
+								'CHFJPY',
+								'EURNZD',
+								'EURCAD',
+								'CADCHF',
+								'NZDJPY',
+								'NZDUSD'
+							],
+							Commodities: ['WTI', 'Gold', 'Silver', 'Suger', 'Oil'],
+							Indices: ['NSDQ', 'FTSE', 'CAC', 'DOW', 'SP500', 'DAX'],
+							Stocks: ['APPLE', 'GOOGLE', 'INTEL', 'YAHOO', 'MSFT', 'IBM']
+						},
+						updateInterval: 5
+					});
+				}
+			})();
+			
+			$(".body_right_button .contact_right_fixed .WX").bind("click",function(){
+				$(this).toggleClass('select');
+			});
+			
+			
+		</script>
+		
+		<!-- WPA start -->
+		<!--<script src="//wp.qiye.qq.com/qidian/2852139799/d4ea00c645062944618db2ab9228d38f" charset="utf-8"></script>-->
+		<!-- WPA end -->
+	</body>
+
+</html>

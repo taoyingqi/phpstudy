@@ -1,0 +1,165 @@
+*                                  { margin:0; padding:0; list-style:none;}
+body                               { background:#fff; font-family:"微软雅黑","黑体","Comic Sans MS","幼圆",sans-serif; width: 100vw; overflow-x: hidden;}
+input                              { font-family:"微软雅黑","黑体","Comic Sans MS","幼圆",sans-serif;}
+textarea                           { font-family:"微软雅黑","黑体","Comic Sans MS","幼圆",sans-serif;}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6             { font-size:100%;}
+address, cite, dfn, em, var,i      { font-style:normal;}
+code, kbd, pre, samp               { font-family:courier new, courier, monospace;}
+small                              { font-size:12px;}
+ul, li, ol                         { list-style:none;}
+a                                  { text-decoration:none; color:#333; outline:none; cursor:pointer; bblr:expression(this.onFocus=this.blur());}
+a:hover                            { text-decoration:none;}
+legend                             { color:#000;}
+fieldset, img                      { border:0;}
+button, input, select, textarea    { font-size:100%; box-sizing:border-box;}
+table                              { border-collapse:collapse; border-spacing:0;}
+.clear                             { clear:both;}
+.clear-1vw                         { width: 100vw; height: 1vw; background: #f2f2f2; clear:both;}
+input[type=submit]                 { -webkit-appearance:none; outline:none;}
+input[type=text]                   { -webkit-appearance:none; outline:none;}
+input[type=tel]                    { -webkit-appearance:none; outline:none;}
+
+.body-stop                         { overflow: hidden; height: 100%;}
+
+/* 头部-导航 */
+header                             { width: 100vw; height: 14vw;}
+header > div                       { float: left; width: 50vw; height: 14vw;}
+header .logo                       { background: #fefefe;}
+header .logo img                   { display: block; margin: 3.2vw auto; width: 26vw;}
+header .menu                       { position: relative; background: linear-gradient(#d40100, #d55a00); line-height: 14vw; color: #fff; z-index: 4;}
+header .menu > a                   { padding-right: 4vw; width: 46vw; height: 14vw; display: block;}
+header .menu span                  { float: right; display: block; color: #fff; font-size: 4vw;}
+header .menu i                     { float: right; margin-left: 1vw; display: block; color: #fff; font-size: 5vw;}
+
+/* 导航-弹窗 */
+.menu-pop                          { position: absolute; top: 14vw; right: -60vw; padding: 0 5vw; width: 50vw; background: #fff;}
+.menu-pop a                        { display: block; padding: 0 5vw; width: 40vw;  font-size: 3.5vw; background: #fff; color: #666; border-bottom: 1px solid #eee;}
+.pop-bj                            { display: none; position: fixed; top: 0; left: 0; z-index: 3; width: 100vw; height: 100vh; background: #000; opacity: 0;}
+
+/* banner */
+.banner img                        { display: block; width: 100vw;}
+
+/* 媒体 */
+.media                             { padding-bottom: 2vw;}
+.media .title                      { width: 100vw; height: 18vw; line-height: 20vw; font-size: 4.5vw; text-align: center;}
+.media .list                       { margin: 0 auto; width: 84vw; height: 31vw; overflow: hidden;}
+.media .list ul                    { overflow: auto;}
+.media .list ul li                 { float: left; margin: 1vw; width: 26vw; height: 13.6vw;}
+.media .list ul li img             { display: block; width: 100%; height: 100%;}
+.media .more                       { width: 100vw; height: 10vw; line-height: 10vw; text-align: center; font-size: 3vw; color: #666;}
+.media .more i                     {}
+
+/* 软件 */
+.system                            { padding: 9vw 0 8vw 0; overflow-x: scroll;}
+.system ul                         { width: 300vw;}
+.system ul li                      { float: left; width: 100vw;}
+.system .img                       { margin: 0 auto; width: 40vw; height: 24.3vw;}
+.system .img img                   { display: block; width: 100%; height: 100%;}
+.system .tit                       { margin-top: 2vw; width: 100vw; height: 11vw; line-height: 11vw; font-size: 4.5vw; text-align: center; color: #d40700;}
+.system .text                      { margin: 0 auto; width: 70vw; margin: 0 auto; text-indent: 2em; font-size: 3vw; line-height: 6vw;}
+
+/* 我们 */
+.we                                { width: 100vw;}
+.we .top                           { padding-bottom: 5vw; width: 100vw; background: #f2f2f2;}
+.we .top .tit                      { width: 100vw; height: 14vw; line-height: 17vw; font-size: 4.5vw; color: #333; text-align: center;}
+.we .top .img                      { margin: 0 auto; width: 70vw;}
+.we .top .img img                  { display: block; width: 100%; height: 100%;}
+.we .bottom                        {}
+.we .left-menu                     { float: left; width: 30vw;}
+.we .left-menu ul li               { position: relative; padding-left: 5vw; width: 25vw; height: 12vw; line-height: 12vw; font-size: 3.5vw; background: #f2f2f2; color: #666;}
+.we .left-menu ul li i.i-left      { position: absolute; bottom: 0; left: 0; width: 2px; height: 12vw; background: #f2f2f2;}
+.we .left-menu ul li i.i-bottom    { position: absolute; bottom: 0; left: 0; width: 30vw; height: 1px; background: #fff;}
+.we .left-menu ul li.on            { background: #fff; color: #d72312;}
+.we .left-menu ul li.on i.i-left   { background: #d72312;}
+.we .left-menu ul li:last-child i.i-bottom    { height: 0px;}
+.we .right-con                     { float: right; width: 70vw; height: 72vw;}
+.we .right-con ul                  { display: table; height: 72vw; line-height: 72vw;}
+.we .right-con ul li               { display: none; vertical-align: middle; margin-left:7.5vw; width: 55vw; text-indent: 2em; font-size: 3.5vw; line-height: 6.5vw; color: #666;}
+.we .right-con ul li.show          { display: inline-block;}
+.index                             {}
+
+/* 新闻 */
+.news                              { width: 100vw;}
+.news .menu                        { width: 100vw; height: 12vw;}
+.news .menu a                      { position: relative; float: left; width: 50vw; height: 12vw; line-height: 12vw; text-align: center; color: #666; font-size: 3.5vw;}
+.news .menu a i                    { position: absolute; bottom: 0; left: 50%; margin-left: -13vw; width: 26vw; height: 2px; background: #e9e9e9;}
+.news .menu a.on                   { color: #d41200;}
+.news .menu a.on i                 { background: #d41200;}
+.news .con                         { margin: 0 auto; width: 92vw;}
+.news .con ul li                   { display: none;}
+.news .con ul li a                 { display: block; margin-top: 3vw; padding: 0 1.5vw 3vw 1.5vw; overflow: auto; border-bottom: 1px solid #e9e9e9;}
+.news .con ul li a:last-child      { border: 0;}
+.news .con ul li a .text           { float: left; width: 58vw; color: #333;}
+.news .con ul li a .text .tit      { padding-top: .6vw; font-size: 4vw; line-height: 6vw;}
+.news .con ul li a .text span      { margin-right: 2vw; font-size: 3.5vw; color: #c8c8c8;}
+.news .con ul li a .img            { float: right; width: 26.8vw; height: 18.4vw; border-radius: 1vw; overflow: hidden;}
+.news .con ul li.show              { display: block;}
+
+/* 银行 */
+.bank                              { padding-bottom: 2vw;}
+.bank .title                       { width: 100vw; height: 18vw; line-height: 20vw; font-size: 4.5vw; text-align: center;}
+.bank .list                        { margin: 0 auto; width: 80vw; height: 31vw; overflow: hidden;}
+.bank .list ul                     { overflow: auto;}
+.bank .list ul li                  { float: left; margin: 1vw; width: 38vw; height: 13.6vw;}
+.bank .list ul li img              { display: block; width: 100%; height: 100%;}
+.bank .more                        { width: 100vw; height: 10vw; line-height: 10vw; text-align: center; font-size: 3vw; color: #666;}
+
+/* 底部 */
+footer                             { padding: 4vw 0; width: 100vw; background: #2b3847;}
+footer a                           { display: block; width: 100vw; text-align: center; color: #fff; font-size: 4vw; line-height: 8vw;}
+footer a i                         { margin-right: 1vw;}
+footer a.tel i                     { color: #d41200;}
+
+/* 位置 */
+.seat                              { position: relative; width: 100vw; height: 20vw;}
+.seat img                          { position: absolute; top: 0; left: 0; display: block; width: 100vw; z-index: 1;}
+.seat .text                        { position: absolute; top: 0; left: 0; width: 100vw; height: 20vw; text-align: center; line-height: 20vw; font-size: 6vw; color: #fff; z-index: 2;}
+
+/* 文章页面 */
+.show-text                         { text-indent: 2em; padding: 5vw; width: 90vw; font-size: 4vw; line-height: 8vw; color: #333;}
+
+/* 软件下载 */
+.rjxz                              { margin: 20vw 0 10vw 0;}
+.rjxz a                            { display: block; margin: 0 auto; margin-bottom: 15vw; padding-top: 8vw; width: 50vw; height: 42vw; border-radius: 999vw; text-align: center; color: #fff;}
+.rjxz a i                          { margin-top: 10vw; font-size: 20vw;}
+.rjxz a span                       { line-height: 12vw; font-size: 5vw;}
+.rjxz a.android                    { background: #23D252}
+.rjxz a.ios                        { background: #4aa9ea}
+
+/* 开户交易 */
+.khjy form                         { width: 86vw; margin: 10vw auto 8vw auto;}
+.khjy form .input                  { position: relative; margin-bottom: 2vw; position: relative; width: 86vw; height: 12vw;}
+.khjy form .input span             { position: absolute; top: 0; right: 0; width: 12vw; height: 12vw; line-height: 12vw; font-size: 3vw; text-align: center; color: #CECECE;}
+.khjy form  .input input, form .input select { padding-left: 2vw; width: 86vw; height: 12vw; line-height:12vw; border: 0; border:1px solid #ddd; border-radius:1vw; font-size:3.5vw;}
+.khjy form .btn                    { margin-top: 7vw; width: 86vw; height: 50vw; height: 12.5vw; line-height: 12.5vw; background: #f60; border-radius: 1.5vw; color: #FFF; font-size: 4vw; border: 0;}
+.khjy form .input a                { position: absolute; top: 50%; right: 1vw; margin-top: -4vw; width: 23vw; height: 8vw; line-height: 8vw; font-size: 3vw; text-align: center; background: #2b3847; color: #fff; border-radius: 999vw;}
+
+.khjy form .input select           { -webkit-appearance:none; outline:none;}
+
+.upload                            { position: relative; margin: 0 auto; margin-top: 5vw; width: 69vw; height: 43.2vw; border: 1px solid #ccc; background: #fff; overflow: hidden;}
+.upload *                          { position: absolute; top: 0; left: 0; width: 69vw; height: 43.2vw; z-index: 1; border:0; -webkit-appearance:none; outline:none;}
+.upload input                      { z-index: 2; opacity: 0;}
+.upload img                        { top: -0.3vw; left: -0.3vw; width: 69.6vw; height: 43.8vw;}
+.upload .text                      { z-index: 0; text-align: center; line-height: 43.2vw; color: #999; font-size: 4vw;}
+
+
+.khh-pop                           { position: fixed; left: 0; bottom: 0; width: 100vw; z-index: 9; background: #fff;}
+.khh-pop a                         {}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 639867 */
+  src: url('//at.alicdn.com/t/font_639867_emcxn824ow3o9a4i.eot');
+  src: url('//at.alicdn.com/t/font_639867_emcxn824ow3o9a4i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_639867_emcxn824ow3o9a4i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_639867_emcxn824ow3o9a4i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_639867_emcxn824ow3o9a4i.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

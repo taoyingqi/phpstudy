@@ -1,0 +1,2088 @@
+[ 2018-04-23T21:38:45+08:00 ] 172.31.195.120 59.56.148.236 GET /home/index/download
+[ log ] www.yixinint.com/home/index/download [运行时间：0.093688s][吞吐率：10.67req/s] [内存消耗：2,183.96kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490277',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/download' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->download[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\download.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'new_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:38:45+08:00 ] 172.31.195.120 59.56.148.236 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031230s][吞吐率：32.02req/s] [内存消耗：995.91kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490468',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:38:56+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/show_article_list.html
+[ log ] www.yixinint.com/admin/link/show_article_list.html [运行时间：0.078073s][吞吐率：12.81req/s] [内存消耗：2,168.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'show_article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/show_article_list_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->show_article_list[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\show_article_list.html [ array (
+  0 => 'list',
+  1 => 'page',
+  2 => 'cate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/show_article_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_cate`.`id`=`news_article`.`cate_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `news_article`.*,`news_cate`.`cate_name` FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_cate`.`id`=`news_article`.`cate_id` LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tc_news_cate` WHERE  `display_mode` = 'article' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:38:57+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/ajax_article_list.html?data={}
+[ log ] www.yixinint.com/admin/link/ajax_article_list.html?data={} [运行时间：0.062458s][吞吐率：16.01req/s] [内存消耗：2,177.31kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'ajax_article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.yixinint.com/admin/link/show_article_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/ajax_article_list_html' => '',
+  'data' => '{}',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->ajax_article_list[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\ajax_article_list.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/ajax_article_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_article`.`cate_id`=`news_cate`.`id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `news_article`.*,`news_cate`.`cate_name` FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_article`.`cate_id`=`news_cate`.`id` LIMIT 0,5 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:39:58+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/show_news_cate.html
+[ log ] www.yixinint.com/admin/link/show_news_cate.html [运行时间：0.093687s][吞吐率：10.67req/s] [内存消耗：2,041.72kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'show_news_cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/show_news_cate_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->show_news_cate[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\show_news_cate.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015614s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/show_news_cate' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name`,`sort`,`display_position` FROM `tc_news_cate` WHERE  `display_mode` = 'article' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:40:03+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/edit_news_cate.html?id=9
+[ log ] www.yixinint.com/admin/link/edit_news_cate.html?id=9 [运行时间：0.062458s][吞吐率：16.01req/s] [内存消耗：2,039.13kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'edit_news_cate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/link/show_news_cate.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/edit_news_cate_html' => '',
+  'id' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->edit_news_cate[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\edit_news_cate.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015614s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/edit_news_cate' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_cate` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:40:13+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/show_article_list.html
+[ log ] www.yixinint.com/admin/link/show_article_list.html [运行时间：0.093687s][吞吐率：10.67req/s] [内存消耗：2,168.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'show_article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/show_article_list_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->show_article_list[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\show_article_list.html [ array (
+  0 => 'list',
+  1 => 'page',
+  2 => 'cate',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015614s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/show_article_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_cate`.`id`=`news_article`.`cate_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `news_article`.*,`news_cate`.`cate_name` FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_cate`.`id`=`news_article`.`cate_id` LIMIT 0,5 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tc_news_cate` WHERE  `display_mode` = 'article' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:40:13+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/ajax_article_list.html?data={}
+[ log ] www.yixinint.com/admin/link/ajax_article_list.html?data={} [运行时间：0.062458s][吞吐率：16.01req/s] [内存消耗：2,177.31kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'ajax_article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.yixinint.com/admin/link/show_article_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/ajax_article_list_html' => '',
+  'data' => '{}',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->ajax_article_list[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\ajax_article_list.html [ array (
+  0 => 'page',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/ajax_article_list' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_article`.`cate_id`=`news_cate`.`id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `news_article`.*,`news_cate`.`cate_name` FROM `tc_news_article` `news_article` INNER JOIN `tc_news_cate` `news_cate` ON `news_article`.`cate_id`=`news_cate`.`id` LIMIT 0,5 [ RunTime:0.015614s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:40:18+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/edit_article.html?id=5
+[ log ] www.yixinint.com/admin/link/edit_article.html?id=5 [运行时间：0.093687s][吞吐率：10.67req/s] [内存消耗：2,058.02kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'edit_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/link/show_article_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/edit_article_html' => '',
+  'id' => '5',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->edit_article[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\edit_article.html [ array (
+  0 => 'cate',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/edit_article' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tc_news_cate` WHERE  `display_mode` = 'article' [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:41:00+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/edit_article.html?id=6
+[ log ] www.yixinint.com/admin/link/edit_article.html?id=6 [运行时间：0.062458s][吞吐率：16.01req/s] [内存消耗：2,050.39kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'edit_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/link/show_article_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/edit_article_html' => '',
+  'id' => '6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->edit_article[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\edit_article.html [ array (
+  0 => 'cate',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/edit_article' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tc_news_cate` WHERE  `display_mode` = 'article' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:41:16+08:00 ] 172.31.195.120 112.64.13.193 GET /admin/link/edit_article.html?id=7
+[ log ] www.yixinint.com/admin/link/edit_article.html?id=7 [运行时间：0.093688s][吞吐率：10.67req/s] [内存消耗：2,050.52kb] [文件加载：42]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'link',
+    2 => 'edit_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/admin/link/show_article_list.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/admin/link/edit_article_html' => '',
+  'id' => '7',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Link->edit_article[ E:\phpstudy\WWW\yuxin\app\admin\controller\Link.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/admin_view/template/link\edit_article.html [ array (
+  0 => 'cate',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_permission` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id` FROM `tc_permission` WHERE  `url` = '/admin/link/edit_article' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_cate` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`cate_name` FROM `tc_news_cate` WHERE  `display_mode` = 'article' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:03+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/company_info
+[ log ] www.yixinint.com/home/index/company_info [运行时间：0.062458s][吞吐率：16.01req/s] [内存消耗：2,109.64kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'company_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=3; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490621',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/company_info' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->company_info[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\company_info.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:04+08:00 ] 172.31.195.120 59.56.148.236 GET /home/index/download
+[ log ] www.yixinint.com/home/index/download [运行时间：0.062459s][吞吐率：16.01req/s] [内存消耗：2,415.09kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490468',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/download' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->download[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\download.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'new_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:04+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110207462096018697044_1524490893249&UrlPath=gsjs&pageTitle=%E9%87%91%E7%89%9B%E9%80%B8%E4%BF%A1%E5%AE%98%E7%BD%91&pageId=33&siteId=10018010&entityId=33&pageType=0&_=1524490893250
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110207462096018697044_1524490893249&UrlPath=gsjs&pageTitle=%E9%87%91%E7%89%9B%E9%80%B8%E4%BF%A1%E5%AE%98%E7%BD%91&pageId=33&siteId=10018010&entityId=33&pageType=0&_=1524490893250 [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：997.52kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490621; monitor_count=4',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110207462096018697044_1524490893249',
+  'UrlPath' => 'gsjs',
+  'pageTitle' => '金牛逸信官网',
+  'pageId' => '33',
+  'siteId' => '10018010',
+  'entityId' => '33',
+  'pageType' => '0',
+  '_' => '1524490893250',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:04+08:00 ] 172.31.195.120 59.56.148.236 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：995.91kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490667',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:04+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：995.67kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490621; monitor_count=4',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:22+08:00 ] 172.31.195.120 112.64.13.193 GET /
+[ log ] www.yixinint.com/ [运行时间：0.062459s][吞吐率：16.01req/s] [内存消耗：2,156.05kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\index.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'news',
+  3 => 'news1',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015614s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 24 ORDER BY `update_time`  desc LIMIT 0,11 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 25 ORDER BY `update_time`  desc LIMIT 0,9 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:22+08:00 ] 172.31.195.120 112.64.13.193 GET /public/static/home/img/512476.jpg
+[ log ] www.yixinint.com/public/static/home/img/512476.jpg [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：996.05kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/img/512476_jpg' => '',
+  'img' => '512476',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:22+08:00 ] 172.31.195.120 112.64.13.193 GET /public/static/home/img/512424.jpg
+[ log ] www.yixinint.com/public/static/home/img/512424.jpg [运行时间：0.015614s][吞吐率：64.04req/s] [内存消耗：996.05kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490086',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/img/512424_jpg' => '',
+  'img' => '512424',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:22+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：995.70kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490943',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:22+08:00 ] 172.31.195.120 112.64.13.193 GET /static/api/js/share/share_api.js?v=226108fe.js
+[ log ] www.yixinint.com/static/api/js/share/share_api.js?v=226108fe.js [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：996.30kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'api',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490943',
+)
+[ info ] [ PARAM ] array (
+  '/static/api/js/share/share_api_js' => '',
+  'v' => '226108fe.js',
+  'share' => 'share_api',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:23+08:00 ] 172.31.195.120 112.64.13.193 GET /static/api/js/view/share_view.js?v=3ae6026d.js
+[ log ] www.yixinint.com/static/api/js/view/share_view.js?v=3ae6026d.js [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：996.26kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'api',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490943',
+)
+[ info ] [ PARAM ] array (
+  '/static/api/js/view/share_view_js' => '',
+  'v' => '3ae6026d.js',
+  'view' => 'share_view',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:23+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110209106660669203848_1524490943319&UrlPath=sy&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E6%9C%9F%E8%B4%A7%E5%AE%98%E7%BD%91&pageId=32&siteId=10018010&entityId=32&pageType=0&_=1524490943320
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110209106660669203848_1524490943319&UrlPath=sy&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E6%9C%9F%E8%B4%A7%E5%AE%98%E7%BD%91&pageId=32&siteId=10018010&entityId=32&pageType=0&_=1524490943320 [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：997.58kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490943',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110209106660669203848_1524490943319',
+  'UrlPath' => 'sy',
+  'pageTitle' => '逸信国际期货官网',
+  'pageId' => '32',
+  'siteId' => '10018010',
+  'entityId' => '32',
+  'pageType' => '0',
+  '_' => '1524490943320',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:42:25+08:00 ] 172.31.195.120 112.64.13.193 GET /static/api/js/trans/logger.js?v=d16ec0e3.js
+[ log ] www.yixinint.com/static/api/js/trans/logger.js?v=d16ec0e3.js [运行时间：0.015614s][吞吐率：64.04req/s] [内存消耗：996.22kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'api',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.691.400 QQBrowser/9.0.2524.400',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'cookie' => 'PHPSESSID=mknq979b93jpnsg46gtciuolu7; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524489085; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490943',
+)
+[ info ] [ PARAM ] array (
+  '/static/api/js/trans/logger_js' => '',
+  'v' => 'd16ec0e3.js',
+  'trans' => 'logger',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:37+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/product
+[ log ] www.yixinint.com/home/index/product [运行时间：0.109302s][吞吐率：9.15req/s] [内存消耗：2,102.02kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=4; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490894',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/product' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->product[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\product.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'pro',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:38+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110202038232420009214_1524490987312&UrlPath=cpfw&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E5%AE%98%E7%BD%91&pageId=34&siteId=10018010&entityId=34&pageType=0&_=1524490987313
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110202038232420009214_1524490987312&UrlPath=cpfw&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E5%AE%98%E7%BD%91&pageId=34&siteId=10018010&entityId=34&pageType=0&_=1524490987313 [运行时间：0.031230s][吞吐率：32.02req/s] [内存消耗：997.46kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'referer' => 'http://www.yixinint.com/home/index/product',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490894; monitor_count=5',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110202038232420009214_1524490987312',
+  'UrlPath' => 'cpfw',
+  'pageTitle' => '逸信国际官网',
+  'pageId' => '34',
+  'siteId' => '10018010',
+  'entityId' => '34',
+  'pageType' => '0',
+  '_' => '1524490987313',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:38+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：995.66kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/product',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=5; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490988',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:40+08:00 ] 172.31.195.120 59.56.148.236 GET /home/index/download
+[ log ] www.yixinint.com/home/index/download [运行时间：0.078073s][吞吐率：12.81req/s] [内存消耗：2,415.09kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490667',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/download' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->download[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\download.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'new_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:40+08:00 ] 172.31.195.120 59.56.148.236 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：995.91kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490763',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:43+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/download
+[ log ] www.yixinint.com/home/index/download [运行时间：0.093688s][吞吐率：10.67req/s] [内存消耗：2,183.81kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/product',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=5; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490988',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/download' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->download[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\download.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'new_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:45+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：995.66kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=6; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490994',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:47+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/reg
+[ log ] www.yixinint.com/home/index/reg [运行时间：0.078073s][吞吐率：12.81req/s] [内存消耗：2,233.54kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'reg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=6; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490994',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/reg' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->reg[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\reg.html [ array (
+  0 => 'seo',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:43:58+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/reg
+[ log ] www.yixinint.com/home/index/reg [运行时间：0.062459s][吞吐率：16.01req/s] [内存消耗：2,072.23kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'reg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490994; monitor_count=7',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/reg' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->reg[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\reg.html [ array (
+  0 => 'seo',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:44:03+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/about
+[ log ] www.yixinint.com/home/index/about [运行时间：0.062458s][吞吐率：16.01req/s] [内存消耗：2,113.58kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'about',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490994; monitor_count=8',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/about' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->about[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\about.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'about',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 26 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:44:03+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110204160716260024502_1524491013028&UrlPath=cpfw&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E5%AE%98%E7%BD%91&pageId=34&siteId=10018010&entityId=34&pageType=0&_=1524491013029
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110204160716260024502_1524491013028&UrlPath=cpfw&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E5%AE%98%E7%BD%91&pageId=34&siteId=10018010&entityId=34&pageType=0&_=1524491013029 [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：997.52kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'referer' => 'http://www.yixinint.com/home/index/about',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490994; monitor_count=9',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110204160716260024502_1524491013028',
+  'UrlPath' => 'cpfw',
+  'pageTitle' => '逸信国际官网',
+  'pageId' => '34',
+  'siteId' => '10018010',
+  'entityId' => '34',
+  'pageType' => '0',
+  '_' => '1524491013029',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:44:03+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：995.67kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/about',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490994; monitor_count=9',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:44:14+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/download
+[ log ] www.yixinint.com/home/index/download [运行时间：0.109303s][吞吐率：9.15req/s] [内存消耗：2,183.81kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/product',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=9; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491014',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/download' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->download[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\download.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'new_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015614s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:44:16+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031230s][吞吐率：32.02req/s] [内存消耗：995.73kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=10; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491025',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:44:23+08:00 ] 172.31.195.120 59.56.148.236 GET /home/index/reg
+[ log ] www.yixinint.com/home/index/reg [运行时间：0.078073s][吞吐率：12.81req/s] [内存消耗：2,072.41kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'reg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=162f22f95da2e9-01338b4033db71-393d5c04-1fa400-162f22f95db362; CNZZDATA1272632894=1977792103-1524481094-%7C1524481094; PHPSESSID=l9j2ajnjv6qug61594ue7cag50; safedog-flow-item=; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524481628,1524489022,1524489628; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490763',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/reg' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->reg[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\reg.html [ array (
+  0 => 'seo',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015614s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:19+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/company_info
+[ log ] www.yixinint.com/home/index/company_info [运行时间：0.078073s][吞吐率：12.81req/s] [内存消耗：2,109.63kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'company_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=10; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491025',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/company_info' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->company_info[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\company_info.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:20+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110206020941778520867_1524491089077&UrlPath=gsjs&pageTitle=%E9%87%91%E7%89%9B%E9%80%B8%E4%BF%A1%E5%AE%98%E7%BD%91&pageId=33&siteId=10018010&entityId=33&pageType=0&_=1524491089078
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110206020941778520867_1524491089077&UrlPath=gsjs&pageTitle=%E9%87%91%E7%89%9B%E9%80%B8%E4%BF%A1%E5%AE%98%E7%BD%91&pageId=33&siteId=10018010&entityId=33&pageType=0&_=1524491089078 [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：997.53kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=11; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491089',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110206020941778520867_1524491089077',
+  'UrlPath' => 'gsjs',
+  'pageTitle' => '金牛逸信官网',
+  'pageId' => '33',
+  'siteId' => '10018010',
+  'entityId' => '33',
+  'pageType' => '0',
+  '_' => '1524491089078',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:20+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.046844s][吞吐率：21.35req/s] [内存消耗：995.70kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=11; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491089',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:27+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/product
+[ log ] www.yixinint.com/home/index/product [运行时间：0.078073s][吞吐率：12.81req/s] [内存消耗：2,101.58kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'product',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=11; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491089',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/product' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->product[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\product.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'pro',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 23 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:27+08:00 ] 172.31.195.120 112.64.13.193 GET /
+[ log ] www.yixinint.com/ [运行时间：0.140532s][吞吐率：7.12req/s] [内存消耗：2,156.32kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491089; monitor_count=12',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\index.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'news',
+  3 => 'news1',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015615s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.031229s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.031229s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 24 ORDER BY `update_time`  desc LIMIT 0,11 [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 25 ORDER BY `update_time`  desc LIMIT 0,9 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:28+08:00 ] 172.31.195.120 112.64.13.193 GET /public/static/home/img/512424.jpg
+[ log ] www.yixinint.com/public/static/home/img/512424.jpg [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：996.01kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491089; monitor_count=13',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/img/512424_jpg' => '',
+  'img' => '512424',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:28+08:00 ] 172.31.195.120 112.64.13.193 GET /public/static/home/img/512476.jpg
+[ log ] www.yixinint.com/public/static/home/img/512476.jpg [运行时间：0.015614s][吞吐率：64.04req/s] [内存消耗：995.96kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'home',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491089; monitor_count=13',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/img/512476_jpg' => '',
+  'img' => '512476',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:28+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110200796407096914955_1524491097469&UrlPath=cpfw&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E5%AE%98%E7%BD%91&pageId=34&siteId=10018010&entityId=34&pageType=0&_=1524491097470
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110200796407096914955_1524491097469&UrlPath=cpfw&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E5%AE%98%E7%BD%91&pageId=34&siteId=10018010&entityId=34&pageType=0&_=1524491097470 [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：997.47kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'referer' => 'http://www.yixinint.com/home/index/product',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110200796407096914955_1524491097469',
+  'UrlPath' => 'cpfw',
+  'pageTitle' => '逸信国际官网',
+  'pageId' => '34',
+  'siteId' => '10018010',
+  'entityId' => '34',
+  'pageType' => '0',
+  '_' => '1524491097470',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:29+08:00 ] 172.31.195.120 112.64.13.193 GET /static/api/js/share/share_api.js?v=226108fe.js
+[ log ] www.yixinint.com/static/api/js/share/share_api.js?v=226108fe.js [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：996.10kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'api',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/static/api/js/share/share_api_js' => '',
+  'v' => '226108fe.js',
+  'share' => 'share_api',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:29+08:00 ] 172.31.195.120 112.64.13.193 GET /PageVisit/Index?callback=jQuery110203487888298697275_1524491097812&UrlPath=sy&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E6%9C%9F%E8%B4%A7%E5%AE%98%E7%BD%91&pageId=32&siteId=10018010&entityId=32&pageType=0&_=1524491097813
+[ log ] www.yixinint.com/PageVisit/Index?callback=jQuery110203487888298697275_1524491097812&UrlPath=sy&pageTitle=%E9%80%B8%E4%BF%A1%E5%9B%BD%E9%99%85%E6%9C%9F%E8%B4%A7%E5%AE%98%E7%BD%91&pageId=32&siteId=10018010&entityId=32&pageType=0&_=1524491097813 [运行时间：0.031230s][吞吐率：32.02req/s] [内存消耗：997.47kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'PageVisit',
+    1 => 'Index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/PageVisit/Index' => '',
+  'callback' => 'jQuery110203487888298697275_1524491097812',
+  'UrlPath' => 'sy',
+  'pageTitle' => '逸信国际期货官网',
+  'pageId' => '32',
+  'siteId' => '10018010',
+  'entityId' => '32',
+  'pageType' => '0',
+  '_' => '1524491097813',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:29+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：995.68kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:29+08:00 ] 172.31.195.120 112.64.13.193 GET /static/api/js/view/share_view.js?v=3ae6026d.js
+[ log ] www.yixinint.com/static/api/js/view/share_view.js?v=3ae6026d.js [运行时间：0.046844s][吞吐率：21.35req/s] [内存消耗：996.09kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'api',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/static/api/js/view/share_view_js' => '',
+  'v' => '3ae6026d.js',
+  'view' => 'share_view',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:45:32+08:00 ] 172.31.195.120 112.64.13.193 GET /static/api/js/trans/logger.js?v=d16ec0e3.js
+[ log ] www.yixinint.com/static/api/js/trans/logger.js?v=d16ec0e3.js [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：996.10kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'api',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/static/api/js/trans/logger_js' => '',
+  'v' => 'd16ec0e3.js',
+  'trans' => 'logger',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:46:28+08:00 ] 172.31.195.120 112.64.13.193 GET /home/index/download
+[ log ] www.yixinint.com/home/index/download [运行时间：0.109303s][吞吐率：9.15req/s] [内存消耗：2,413.77kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'download',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=13; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491098',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/download' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->download[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\download.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'new_list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015614s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.015615s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `display` = 'Y' ORDER BY `add_time`  desc [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T21:46:30+08:00 ] 172.31.195.120 112.64.13.193 GET /error.jpg
+[ log ] www.yixinint.com/error.jpg [运行时间：0.031229s][吞吐率：32.02req/s] [内存消耗：995.73kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'error',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.yixinint.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://www.yixinint.com/home/index/download',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=7f3sivvccob7afsrnhsvskodl3; safedog-flow-item=; __guid=189408941.1226767007059496000.1524490525405.6548; monitor_count=14; Hm_lvt_8da48fe42f540ef830cde5e93b8f6c3b=1524490528; Hm_lpvt_8da48fe42f540ef830cde5e93b8f6c3b=1524491159',
+)
+[ info ] [ PARAM ] array (
+  '/error_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:58:52+08:00 ] 172.31.195.120 106.120.161.68 GET /newsinfo/91149.html
+[ log ] www.yixinint.com/newsinfo/91149.html [运行时间：0.031236s][吞吐率：32.01req/s] [内存消耗：995.02kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'newsinfo',
+    1 => '91149',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'referer' => 'http://www.yixinint.com/newsinfo/91149.html',
+  'host' => 'www.yixinint.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+)
+[ info ] [ PARAM ] array (
+  '/newsinfo/91149_html' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:58:53+08:00 ] 172.31.195.120 182.118.20.152 GET /newsinfo/91149.html
+[ log ] www.yixinint.com/newsinfo/91149.html [运行时间：0.031237s][吞吐率：32.01req/s] [内存消耗：995.52kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'newsinfo',
+    1 => '91149',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'referer' => 'http://www.yixinint.com/newsinfo/91149.html',
+  'host' => 'www.yixinint.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'x-forwarded-for' => 'unknown',
+  'cache-control' => 'max-age=259200',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/newsinfo/91149_html' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T21:58:53+08:00 ] 172.31.195.120 171.13.14.133 GET /newsinfo/91149.html
+[ log ] www.yixinint.com/newsinfo/91149.html [运行时间：0.015619s][吞吐率：64.02req/s] [内存消耗：995.47kb] [文件加载：27]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'newsinfo',
+    1 => '91149',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'referer' => 'http://www.yixinint.com/newsinfo/91149.html',
+  'host' => 'www.yixinint.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+  'x-forwarded-for' => 'unknown',
+  'cache-control' => 'max-age=259200',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/newsinfo/91149_html' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-04-23T22:06:45+08:00 ] 172.31.195.120 106.120.160.109 GET /home/index/company_info
+[ log ] www.yixinint.com/home/index/company_info [运行时间：0.093710s][吞吐率：10.67req/s] [内存消耗：2,108.49kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'company_info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'referer' => 'http://www.yixinint.com/home/index/company_info',
+  'host' => 'www.yixinint.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/company_info' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->company_info[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\company_info.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015619s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.031236s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2018-04-23T22:09:26+08:00 ] 172.31.195.120 106.120.160.109 GET /home/index/about
+[ log ] www.yixinint.com/home/index/about [运行时间：0.078105s][吞吐率：12.80req/s] [内存消耗：2,112.39kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpstudy\WWW\yuxin\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'about',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'referer' => 'http://www.yixinint.com/home/index/about',
+  'host' => 'www.yixinint.com',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; Tablet PC 2.0)',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/about' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->about[ E:\phpstudy\WWW\yuxin\app\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpstudy\WWW\yuxin\theme/home_view/template/index\about.html [ array (
+  0 => 'seo',
+  1 => 'web',
+  2 => 'about',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=yuxin;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_config` [ RunTime:0.015621s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = 'SEO' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_config` WHERE  `cate` = '网站' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tc_news_article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tc_news_article` WHERE  `cate_id` = 26 LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------

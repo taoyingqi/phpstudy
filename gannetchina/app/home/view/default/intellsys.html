@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+		{include file="public:head" /}	
+    <meta charset="utf-8">
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+		
+</head>
+<div class="container-fluid">
+			{include file="public:nav" /}
+			<div onclick="check()" style="width: 100%;height: 400px;background-color:#1D1D1D; margin:0px;">
+				<img src="{$yf_theme_path}public/images/631133268174329433.jpg" style="margin:0px;border:0px;height: 110%;width: 110%; ">
+			</div>
+<div class="row clearfix context">
+	<div class="col-md-12 column">
+		<div style="margin: 0 auto;min-width: 1100px;">
+			<div style="width: 20%; height: 100%; float: left; ">
+			{include file="public:leftslider"/}
+			</div>
+			<div style="width: 60%; height: 100%;margin-left:150px;float: left; ">
+				<div class="friendly_links">
+					<div class="inner">
+						<div class="maincontent " style=" margin-left: 0px; width: 100%; float: left; color: #687177;">
+						{if condition="$lang eq 'zh-cn'"}
+							<div class="new_page_top" style="overflow: hidden; font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><h2 style="color: rgb(167, 30, 35); margin-bottom: 25px; font-size: 36px;">智能交易系统</h2><p style="color: rgb(47, 39, 37); margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">&nbsp;</p><h3 style="color: rgb(167, 30, 35); margin-bottom: 25px; font-size: 24px;">什么是智能交易系统？</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color:#2f2725">外汇智能交易系统（EA）是一款灵活的外汇自动交易解决方案，可添加至当前最流行且最受交易者欢迎的</span><span style="">MetaTrader 4交易平台</span><span style="color:#2f2725">。更为特别的是，EA是一款完全支持自动交易策略的软件，当市场发生一定状况之际，亦会自动发送交易提醒。</span></p><p style="color: rgb(47, 39, 37); margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">MT4的EA由特殊的MQL4编程语言编写，加载在MT4交易平台的MetaEditor程序运用此语言帮助交易者创建EA。</p></div></div><div class="new_page_list title_color" style="overflow: hidden; font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><div class="item" style="margin-bottom: 80px; overflow: hidden;"><div class="new_page_list_img right" style="color: rgb(47, 39, 37); float: right; width: 472.844px; text-align: right;"><img width="455" height="318" src="{$yf_theme_path}public/images/Vantage-FX_Expert-advisors_img_05.jpg" class="attachment-full size-full" alt="Vantage-FX_Expert-advisors_img_05" style="border-width: 0px; border-style: initial; max-width: 100%; height: auto;"></div><div class="new_page_list_text right" style="padding-top: 30px; float: left; width: 235px;"><h3 style="color: rgb(167, 30, 35); margin-bottom: 25px; font-size: 24px;">如何建立EA并交易？</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color:#2f2725">外汇EA非常易于创建，使用便捷的MT4交易平台与预加载的MetaEditor程序结合，无论何种交易水平的交易者都可迅速便捷的创建EA。</span><br><span style="color:#2f2725">一旦开始交易，</span><a href="http://undefined/" style="outline-style: none;"><span style="color:#000000">Gannet MT4</span></a><span style="color:#2f2725">交易平台就会有很多模板可供选择，包括时下最流行的EA模板。</span></p></div></div></div></div><p><br></p>
+							 {else /}
+							<div class="new_page_top" style="overflow: hidden; font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><h2 style="color: rgb(167, 30, 35); margin-bottom: 25px; font-size: 36px;">Intelligent trading system</h2><p style="color: rgb(47, 39, 37); margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">&nbsp;</p><h3 style="color: rgb(167, 30, 35); margin-bottom: 25px; font-size: 24px;">What is an intelligent trading system?</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color:#2f2725">Forex Expert Advisors (EA) is a flexible forex automated trading solution that can be added to the most popular and most trader-friendly</span><span style="">MetaTrader 4 trading platform</span><span style="color:#2f2725">.More specifically, EA is a fully automated trading strategy software that automatically sends trading alerts when certain conditions occur on the market.</span></p><p style="color: rgb(47, 39, 37); margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">MT4's EA is written in a special MQL4 programming language and the MetaEditor program loaded on the MT4 trading platform is used to help traders create EA.</p></div></div><div class="new_page_list title_color" style="overflow: hidden; font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><div class="item" style="margin-bottom: 80px; overflow: hidden;"><div class="new_page_list_img right" style="color: rgb(47, 39, 37); float: right; width: 472.844px; text-align: right;"><img width="455" height="318" src="{$yf_theme_path}public/images/Vantage-FX_Expert-advisors_img_05.jpg" class="attachment-full size-full" alt="Vantage-FX_Expert-advisors_img_05" style="border-width: 0px; border-style: initial; max-width: 100%; height: auto;"></div><div class="new_page_list_text right" style="padding-top: 30px; float: left; width: 235px;"><h3 style="color: rgb(167, 30, 35); margin-bottom: 25px; font-size: 24px;">How to set up EA and trade?</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color:#2f2725">Forex EA is very easy to create, easy to use MT4 trading platform and preloaded MetaEditor program combined, no matter what the trading level of traders can quickly and easily create EA.</span><br><span style="color:#2f2725">Once started trading,</span><a href="http://undefined/" style="outline-style: none;"><span style="color:#000000">Gannet MT4</span></a><span style="color:#2f2725">Trading platform will have many templates to choose from, including the most popular EA templates.</span></p></div></div></div></div><p><br></p>
+							{/if}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+{include file="public:footer" /}
+</body>
+</html>

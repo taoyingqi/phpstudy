@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type='text/css' href="/static/home/css/base.css">
+    <link rel="stylesheet" type='text/css' href="/static/home/css/common.css">
+    <link rel="stylesheet" type='text/css' href="/static/home/css/login.css">
+</head>
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="headerM wrap clear">
+            <div class="headerL">
+                <span>www.jifendian.com</span>
+                <a href="javascript:;" id="favorites">收藏本站</a>
+            </div>
+            <div class="headerR">
+                                <span>
+                                    <a href="/user/login.html">登录</a>
+                                    <a href="/user/register.html">注册</a>
+                                </span>
+                <a href="/user/center.html" target="_blank" class="myOrder">个人中心</a>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="navInner wrap clear">
+            <div class="logo">
+                <a href="/index.html" target="_blank"><img src="/static/home/img/logo.png" alt=""></a>
+            </div>
+            <div class="navM">
+                <ul class="nav_list clear">
+                    <li><a href="javascript:;" target="_blank">首页</a></li>
+                    <li><a href="/jinrong.html" target="_blank">金融理财</a></li>
+                    <li><a href="/fenlei.html" target="_blank">P2P投资</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--内容区-->
+    <div class="main wrap clear">
+        <div class="mainBg">
+            <img src="/static/home/img/login/mainBg.png" alt="">
+        </div>
+        <div class="mainM">
+            <div class="login" style="display: block">
+                <h3 class="main_title">登录</h3>
+                <form action="" class="login_form">
+                    <label for="">
+                        <span>手机号码：</span>
+                        <input type="text" name="mobile">
+                    </label>
+                    <label for="">
+                        <span>密码：</span>
+                        <input type="text" name="password">
+                    </label>
+                    <label for="" class="login_verification">
+                        <span>验证码：</span>
+                        <input type="text" name="captcha">
+                        <a href="javascript:;"><img src="/home/member/captcha_image" alt=""></a>
+                    </label>
+                    <div class="login_option clear">
+                        <a href="javascript:;" class="login_forget">忘记密码？</a>
+                        <a href="javascript:;" class="login_null">没有账号，去注册</a>
+                    </div>
+                    <label for="" class="form_btn login_form_btn">
+                        <button type="button">登录</button>
+                    </label>
+                </form>
+            </div>
+            <div class="forget">
+                <h3 class="main_title">忘记密码</h3>
+                <p class="prompt"><i></i>温馨提示：如遇手机号码已更换，请联系咨询客服。</p>
+                <form action="">
+                    <label for="">
+                        <span>手机号码：</span>
+                        <input type="text">
+                    </label>
+                    <label for="" class="verification">
+                        <span>验证码：</span>
+                        <input type="text"><a href="javascript:;">免费获取验证码</a>
+                    </label>
+                    <label for="" class="form_btn">
+                        <button type="button">登录</button>
+                    </label>
+                </form>
+                <div class="forget_pop">
+                    <div class="forget_pop_top">
+                        <p>信息</p><a href="javascript:;">x</a>
+                    </div>
+                    <div class="forget_pop_m">
+                        <p><i></i>发送成功</p>
+                        <p class="textR"><a href="javascript:;">去修改</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modify">
+                <h3 class="main_title">忘记密码</h3>
+                <p class="prompt"><i></i>温馨提示：请妥善保管新密码，不要随意泄露给他人。</p>
+                <form action="">
+                    <label for="">
+                        <span>设置新密码：</span>
+                        <input type="text">
+                    </label>
+                    <label for="">
+                        <span>确认密码：</span>
+                        <input type="text">
+                    </label>
+                    <label for="" class="form_btn">
+                        <button type="button">确认</button>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--底部区域-->
+    <div class="footer">
+        <div class="footerInner wrap">
+            <div class="footerM clear">
+                <ul class="footer_list">
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;" target="_blank">关于我们</a></li>
+                            <li><a href="javascript:;" target="_blank">公司简介</a></li>
+                            <li><a href="javascript:;" target="_blank">联系我们</a></li>
+                            <li><a href="javascript:;" target="_blank">免费声明</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;" target="_blank">关于我们</a></li>
+                            <li><a href="javascript:;" target="_blank">公司简介</a></li>
+                            <li><a href="javascript:;" target="_blank">联系我们</a></li>
+                            <li><a href="javascript:;" target="_blank">免费声明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer_word">
+                    <p><i></i>456556434123</p>
+                    <p><i></i>0591-1225544</p>
+                    <p>咨询时间：8：00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="/static/home/js/jquery.min.js"></script>
+<script type="text/javascript" src="/plugin/layer/layer.js"></script>
+<script type="text/javascript" src="/plugin/json/json2.js"></script>
+<script type="text/javascript" src="/static/home/js/common.js"></script>
+<script type="text/javascript" src="/static/home/js/login.js"></script>
+</html>

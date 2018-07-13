@@ -1,0 +1,89 @@
+/* 导航动画 */
+.menu-pop.show                       { animation:menu-show .6s; animation-fill-mode:forwards;}
+@keyframes menu-show
+{
+  0%     { right: -60vw;}
+  100%   { right: 0;}
+}
+.menu-pop.hide                       { animation:menu-hide .6s; animation-fill-mode:forwards;}
+@keyframes menu-hide
+{
+  0%     { right: 0vw;}
+  100%   { right: -60vw;}
+}
+
+/* 黑色背景动画 */
+.pop-bj.show                       { animation:pop-bj-show .6s; animation-fill-mode:forwards;}
+@keyframes pop-bj-show
+{
+  0%     { opacity: 0;}
+  100%   { opacity: .5;}
+}
+
+.pop-bj.hide                       { animation:pop-bj-hide .6s; animation-fill-mode:forwards;}
+@keyframes pop-bj-hide
+{
+  0%     { opacity: .5;}
+  100%   { opacity: 0;}
+}
+
+
+/* 媒体展开 */
+.media .list.show                       { animation:list-show1 .6s; animation-fill-mode:forwards;}
+@keyframes list-show1
+{
+  0%     { height: 31vw;}
+  100%   { height: 47vw;}
+}
+
+.media .list.hide                       { animation:list-hide1 .6s; animation-fill-mode:forwards;}
+@keyframes list-hide1
+{
+  0%     { height: 47vw;}
+  100%   { height: 31vw;}
+}
+
+/* 银行展开 */
+.bank .list.show                       { animation:list-show2 .6s; animation-fill-mode:forwards;}
+@keyframes list-show2
+{
+  0%     { height: 31vw;}
+  100%   { height: 47vw;}
+}
+
+.bank .list.hide                       { animation:list-hide2 .6s; animation-fill-mode:forwards;}
+@keyframes list-hide2
+{
+  0%     { height: 47vw;}
+  100%   { height: 31vw;}
+}
+
+
+/* tab切换 */
+.news .con ul li.show,
+.we .right-con ul li.show              { animation:tab-show .6s; animation-fill-mode:forwards;}
+@keyframes tab-show
+{
+  0%     { transform:scale(0);}
+  100%   { transform:scale(1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p{}

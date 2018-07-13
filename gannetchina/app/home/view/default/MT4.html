@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+		{include file="public:head" /}	
+    <meta charset="utf-8">
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+		
+</head>
+<div class="container-fluid">
+			{include file="public:nav" /}
+			<div onclick="check()" style="width: 100%;height: 400px;background-color:#1D1D1D; margin:0px;">
+				<img src="{$yf_theme_path}public/images/631133268174329433.jpg" style="margin:0px;border:0px;height: 110%;width: 110%; ">
+			</div>
+<div class="row clearfix context">
+	<div class="col-md-12 column">
+		<div style="margin: 0 auto;min-width: 1100px;">
+			<div style="width: 20%; height: 100%; float: left; ">
+			{include file="public:leftslider"/}
+			</div>
+			<div style="width: 60%; height: 100%;margin-left:150px;float: left; ">
+				<div class="friendly_links">
+					<div class="inner">
+						<div class="maincontent " style=" margin-left: 0px; width: 100%; float: left; color: #687177;">
+						{if condition="$lang eq 'zh-cn'"}
+							<div class="new_content_wrap" style="padding-top: 20px; font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="new_content_inner metatrader4_top_title" style="padding-top: 20px !important; padding-bottom: 20px !important;"><h3 style="color: rgb(168, 24, 27); margin-bottom: 20px; font-size: 24px; font-weight: bold; line-height: 1.2;">Meta Trader 4 （MT4）</h3><p style="color: rgb(104, 113, 119); margin-top: 0px; margin-bottom: 15px; line-height: 25px;">Meta Trader 4交易平台（MT4）是世界上最为流行的在线交易系统，对所有在线金融市场的投资者来说都是最重要的工具，结合了GANNET优质的交易执行和最具竞争力的点差报价。系统完善的风险管理工具，人性化的界面布局，实时的行情速递都能在各种程度上帮助交易者直接高效的管理个人账户，体验高新科技带来的无穷交易乐趣。<span style="color: rgb(104, 113, 119); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">MT4交易平台&nbsp;</span>以最直观的用户界面和高度自定义的功能备受全球投资者喜爱与推崇，用户可以通过最便捷的方式来定制您所需要的交易策略程序。平台上丰富的图标和大量的技术指标可以帮助客户了解最新市场行情趋势，把握每一次交易机会。</p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 25px;"><span style="display: inline-block; padding: 7px 15px; font-size: 15px; background: rgb(168, 25, 27);"><strong>
+							<a href="https://download.mql5.com/cdn/web/11427/mt4/gannetcapital4setup.exe" target="_blank">
+							<span style="color:#ffffff">点击这里下载</span>
+							</a>
+							</strong></span></p></div></div><div class="forex_content_wrap metatrader4_content" style="margin-bottom: 30px; color: rgb(104, 113, 119); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="forex_content"><div class="item" style="overflow: hidden;"><div class="item_title item_title_right" style="margin-right: 501.797px; padding-bottom: 36px; width: 675.5px;"><h4 style="font-size: 43px; color: rgb(44, 44, 44);">Gannet MT4交易平台提供综合图表库</h4></div><div class="right forex_img" style="float: right; vertical-align: middle; text-align: right; width: 45%;"><img width="585" height="455" src="{$yf_theme_path}public/images/meta_tow_img1.jpg" class="attachment-page_content_text_image_image size-page_content_text_image_image" alt="meta_tow_img1" style="border-width: 0px; border-style: initial; max-width: 100%; height: auto; vertical-align: top; margin-bottom: 15px;"></div><div class="left forex_text" style="float: left; width: 55%;"><p style="margin-top: 0px; margin-bottom: 15px; line-height: 25px; text-transform: uppercase;">Gannet MT4交易平台具备各种交易类别</p>
+							<ul class="tow_list" style="overflow: hidden; margin-bottom: 15px; padding-left: 0px;">
+							<li style="padding-top: 20px; background: transparent none repeat scroll 0% 0%; font-size: 15px; line-height: 20px; float: left; width: 50%; padding-left: 0px;"><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px; text-transform: uppercase;">交易高达</p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;"><span style="font-size: 45px; color: rgb(44, 44, 44);">30</span></p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;">种外汇货币对、股指、期货、贵金属</p></li>
+							<li style="padding-top: 20px; background: transparent none repeat scroll 0% 0%; font-size: 15px; line-height: 20px; border-left: 1px solid rgb(214, 214, 214); float: left; width: 49%;"><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px; text-transform: uppercase;">接入多达</p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;"><span style="font-size: 45px; color: rgb(44, 44, 44);">9</span></p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;">种方法连接M</p></li>
+							</ul>
+							</div></div></div></div>
+							 {else /}
+							<div class="new_content_wrap" style="padding-top: 20px; font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="new_content_inner metatrader4_top_title" style="padding-top: 20px !important; padding-bottom: 20px !important;"><h3 style="color: rgb(168, 24, 27); margin-bottom: 20px; font-size: 24px; font-weight: bold; line-height: 1.2;">Meta Trader 4 （MT4）</h3><p style="color: rgb(104, 113, 119); margin-top: 0px; margin-bottom: 15px; line-height: 25px;">Meta Trader 4 Trading Platform (MT4) is the world's most popular online trading system and is the most important tool for all investors in the online financial markets. It combines GANNET's high-quality trading execution with the most competitive spreads . The well-established risk management tools, user-friendly interface layout and real-time market delivery help traders manage their personal accounts directly and efficiently in various degrees and experience the endless trading fun brought by hi-tech.<span style="color: rgb(104, 113, 119); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">MT4 trading platform&nbsp;</span>With the most intuitive user interface and highly customized features much loved and respected by the global investors, users can customize the most convenient way you need the trading strategy program. Rich platform icons and a large number of technical indicators can help customers understand the latest market trends, grasp every opportunity to trade.</p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 25px;"><span style="display: inline-block; padding: 7px 15px; font-size: 15px; background: rgb(168, 25, 27);"><strong>
+							<a href="https://download.mql5.com/cdn/web/11427/mt4/gannetcapital4setup.exe" target="_blank">
+							<span style="color:#ffffff">Click here to download</span>
+							</a>
+							</strong></span></p></div></div><div class="forex_content_wrap metatrader4_content" style="margin-bottom: 30px; color: rgb(104, 113, 119); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="forex_content"><div class="item" style="overflow: hidden;"><div class="item_title item_title_right" style="margin-right: 501.797px; padding-bottom: 36px; width: 675.5px;"><h4 style="font-size: 43px; color: rgb(44, 44, 44);">Gannet MT4 trading platform provides a comprehensive chart library</h4></div><div class="right forex_img" style="float: right; vertical-align: middle; text-align: right; width: 45%;"><img width="585" height="455" src="{$yf_theme_path}public/images/meta_tow_img1.jpg" class="attachment-page_content_text_image_image size-page_content_text_image_image" alt="meta_tow_img1" style="border-width: 0px; border-style: initial; max-width: 100%; height: auto; vertical-align: top; margin-bottom: 15px;"></div><div class="left forex_text" style="float: left; width: 55%;"><p style="margin-top: 0px; margin-bottom: 15px; line-height: 25px; text-transform: uppercase;">Gannet MT4 trading platform with a variety of transaction types</p>
+							<ul class="tow_list" style="overflow: hidden; margin-bottom: 15px; padding-left: 0px;"><li style="padding-top: 20px; background: transparent none repeat scroll 0% 0%; font-size: 15px; line-height: 20px; float: left; width: 50%; padding-left: 0px;"><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px; text-transform: uppercase;">Trading up to</p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;"><span style="font-size: 45px; color: rgb(44, 44, 44);">30</span></p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;">kinds of foreign exchange currency pairs, stock indexes, futures, precious metals</p></li><li style="padding-top: 20px; background: transparent none repeat scroll 0% 0%; font-size: 15px; line-height: 20px; border-left: 1px solid rgb(214, 214, 214); float: left; width: 49%;"><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px; text-transform: uppercase;">Access up to</p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;"><span style="font-size: 45px; color: rgb(44, 44, 44);">9</span></p><p style="margin-top: 0px; margin-bottom: 15px; font-size: 16px; line-height: 25px;">ways to connect M</p></li></ul></div></div></div></div>
+							{/if}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+{include file="public:footer" /}
+</body>
+</html>

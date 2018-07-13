@@ -1,0 +1,170 @@
+{extend name="base/base" /}
+
+{block name="content"}
+
+<div class="panel admin-panel margin-top">
+    <div class="body-content">
+        <form method="post" class="form-x" action="">
+
+            <div class="form-group check-error" id="cate_form">
+                <div class="label">
+                    <label>链接分类：</label>
+                </div>
+                <div class="field">
+                    <select name="cate_id" class="input w50" data-validate="required:请选择链接分类" id="sel">
+                        <option value="">请选择链接分类</option>
+                        {volist name="link_cate" id="jun"}
+                        <option value="{$jun.id}" {eq name="$jun.id" value="$list['cate_id']"}selected="selected"{/eq}>{$jun.cate_name}</option>
+                        {/volist}
+                    </select>
+                    <div class="tips" title=""></div>
+                    <div class="input-help"><ul><li>请选择链接分类</li></ul></div>
+                </div>
+            </div>
+
+            <script>
+
+                //init时如果有选择分类不提示
+                $(document).ready(function(){
+
+                     selobj = document.getElementById('sel');
+
+                      var opt = selobj.options;
+                      var num = selobj.selectedIndex;
+                    if(opt[num].value)
+                    {
+                         $('#cate_form').removeClass('check-error');
+                        $('.input-help').hide();
+                    }
+
+                });
+
+
+                </script>
+
+            <div class="form-group">
+                <div class="label">
+                    <label>链接名称：</label>
+                </div>
+                <div class="field">
+                    <input type="hidden" name="id" value="{$list['id']}">
+                    <input type="text" class="input w50" name="link_name" value="{$list['name']}" data-validate="required:请输入标题">
+                    <div class="tips" title=""></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="label">
+                    <label>链接图片：</label>
+                </div>
+                <div class="field">
+                    <input type="text" id="url1" name="link_img" class="input tips" style="width:25%; float:left;" value="{$list['icon']}" data-toggle="hover" data-place="right" data-image="{$list['icon']}" title="">
+                    <input type="button" class="button bg-blue margin-left" id="image1" onclick="return openfile()" value="+ 浏览上传" style="float:left;">
+                    <input type="file" style="display:none" id="img1">
+                    <script>
+                        function openfile()
+                        {
+                            $('#img1').click();
+                        }
+
+                        $("#img1").change(function(){
+
+                            var url = "/admin/platform/get_img.html";
+                            var dataobj = $(this)[0].files;
+                            var formdata =new FormData();
+                            formdata.append("imgfile",dataobj[0]);
+                            $.ajax({
+                                url : url,
+                                type : 'post',
+                                data : formdata,
+                                cache : false,
+                                contentType : false,
+                                processData : false,
+                                dataType : "html",
+                                success : function(res){
+                                    $("#url1").val(res);
+                                    $('.tips').attr('data-image',res);
+                                }
+
+                            });
+
+                        });
+
+                    </script>
+                    <div class="tipss">图片尺寸：1920*200</div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="label">
+                    <label>链接地址：</label>
+                </div>
+                <div class="field">
+                    <input type="text" class="input w50" name="link_url" value="{$list['url']}" data-validate="required:请输入标题">
+                    <div class="tips" title=""></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label>是否显示：</label>
+                </div>
+                <div class="field">
+                    <div class="button-group radio">
+
+                        <label class="button active">
+                            <span class="icon icon-check"></span>
+                            <input name="display" value="1" type="radio" {eq name="$list['display']" value="Y"}checked="checked"{/eq}>是
+                        </label>
+
+                        <label class="button"><span class="icon icon-times"></span>
+                            <input name="display" value="0" type="radio" {eq name="$list['display']" value="N"}{/eq}>否
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label>链接排序：</label>
+                </div>
+                <div class="field">
+                    <input type="text" class="input w50" name="sort" value="{$list['sort']}" data-validate="required:,number:排序必须为数字">
+                    <div class="tips" title=""></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label>链接点击率：</label>
+                </div>
+                <div class="field">
+                    <input type="text" class="input w50"  value="{$list['hits']}" readonly="readonly">
+                    <div class="tips" title=""></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label>添加时间：</label>
+                </div>
+                <div class="field">
+                    <input type="text" class="input w50" value="{$list['add_time']|date='Y-m-d',###}" readonly="readonly">
+                    <div class="tips" title=""></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">
+                    <label></label>
+                </div>
+                <div class="field">
+                    <input type="hidden" id="submit_url" value="/admin/link/do_edit_link.html">
+                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{/block}

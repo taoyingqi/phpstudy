@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>逸信国际-新闻详情</title>
+    <link rel="stylesheet" href="__static__/css/style.css">
+    <link rel="stylesheet" href="__static__/css/animation.css">
+</head>
+<body>
+<!-- 头部 -->
+{include file="theme/mobile_view/template/public/header.html"}
+<!-- banner -->
+<div class="seat">
+    <div class="text">新闻详情</div>
+    <img src="__static__/img/seat.jpg" alt="">
+</div>
+<div class="show-text">
+    <h3 style="text-align: center">{$news.title}</h3>
+    {$news.text}
+    <p style="text-align:center;margin-top:3vw"><a href="/mobile" style="color:#d40100"> 返回首页 </a></p>
+</div>
+{include file="theme/mobile_view/template/public/footer.html"}
+<div class="pop-bj"></div>
+<script src="__static__/js/lp.js"></script>
+</body>
+</html>

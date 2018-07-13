@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>{:lang('login')} {$site_name}</title>
+
+<link rel="stylesheet" href="{$yf_theme_path}public/css/style_login.css">
+<script src="{$yf_theme_path}public/js/jquery.min.js"></script>
+<script src="{$yf_theme_path}public/js/login.js"></script>
+
+</head>
+<body style="background:url({$yf_theme_path}public/images/login_bg2.jpg)">
+<div class="container" >
+	<div class="login-wrap">
+		<div class="login-head">
+			<div class="left"><img src="{$yf_theme_path}public/images/logo.png" width="180"></div>
+			<div class="right">
+				<div class="selector">
+					<img src="{$yf_theme_path}public/images/nation.png" class="nation-icon"><span>中</span><img src="{$yf_theme_path}public/images/xiala.png" class="down-icon">
+				</div>
+			</div>
+			<div class="droplist" style="display:none"><ul><li>简体中文</li><li>English</li><li>繁体中文(台湾)</li></ul></div>
+		</div>
+<div class="login-body" >
+	<div class="tab-container">
+		<div class="nav"><ul><li class="active">登录</li><li id="on">免费注册</li></ul></div>
+		<div class="content1" >
+			<div class="c-title"><span class="title-left">邮箱</span><span class="title-right">换成手机</span></div>
+			<form action="{:url('home/Login/runlogin')}" method="post">
+				<div class="item"><span class="s-nation" style="display:none;"><img class="nation-icon" src="{$yf_theme_path}public/images/nation.png"><span></span></span><input id="qie" class="email" type="text" name="tradingPlatformAccountName" value="" placeholder="用户名/邮箱"></div>
+				<div class="item"><input class="mima" type="text" name="password" value="" placeholder="密码"></div>
+				<div class="check"><input type="checkbox" value="" id="checkbox1"><label for="checkbox1"></label><span name="remember">记住我</span><a href="{:url('home/Login/forgot_pwd')}"><span class="check-right">忘记密码？</span></a></div>
+				<button type="submit" class="btn1">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+			</form>
+			<div class="other"><span></span>&nbsp;&nbsp;&nbsp;其&nbsp;他&nbsp;&nbsp;&nbsp;<span></span></div>
+			<div class="moni"><a href="虚拟注册.html">注册模拟账户</a></div>
+		</div>
+		<div class="content2" style="display:none;">
+			<div class="c-title"><span class="title-left">邮箱</span><span class="title-right">换成手机</span></div>
+			<form action="{:url('home/Register/runregister')}" method="post">
+				<div class="item"><input class="user" type="text" name="firstName" value="" placeholder="真实姓名"></div>
+				<div class="item"><span class="s-nation" style="display:none;"><img class="nation-icon" src="{$yf_theme_path}public/images/nation.png"><span></span></span><input id="qie2" class="email2"  type="text" name="email" value="" placeholder="邮箱"></div>
+				<div class="item"><input  class="mima2" type="text" name="Password" value="" placeholder="密码必须6-20位，由数字字母（大小写均可）组成"></div>
+				<div class="item"><input type="text" name="verify" value="" placeholder="验证码" id="yan" ><span><img class="verify_img" id="verify_img" src="{:url('home/Login/verify')}" onClick="this.src='{:url('home/Login/verify')}'+'?'+Math.random()" style="cursor: pointer;width:100%;border: 1px solid #d5d5d5;height:40px;" title="{:lang('click to get')}"></span></div>
+				<button type="submit" class="btn2">注&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+$(".btn1").click(function(){
+   var text=$(":text").val();
+	var email=$(".email").val();
+	var phone=$(".phone").val();
+	var mima=$(".mima").val();
+	
+	if(text==""){
+		alert("用户名/邮箱/手机号或密码不能为空！");
+		return false;
+	}
+   if($("#qie").hasClass("email")){
+	   	
+	var filter=/^[A-Za-z\d]+[A-Za-z\d\-_\.]*@([A-Za-z\d]+[A-Za-z\d\-]*\.)+[A-Za-z]{2,4}$/;
+	if(!filter.test(email)){
+		alert("邮箱格式不正确！");
+		return false;
+	}
+   }
+	
+	var mi=/^\w\d{6,20}$/;
+	if(!mi.test(mima)){
+		alert("密码格式错误！");
+		return false;
+	}
+	
+if($("#qie").hasClass("phone")){
+	var reg=/^1[3|4|5|8][0-9]\d{4,8}$/;
+	if(!reg.test(phone)){
+		alert("手机格式不正确！");
+		return false;
+	}
+	
+}
+	
+	})
+
+
+
+})
+</script>
+<script>
+
+//btn2
+$(".btn2").click(function(){
+
+	var email2=$(".email2").val();
+	var phone2=$(".phone2").val();
+	var mima2=$(".mima2").val();
+	var user=$(".user").val();
+	
+	if(email2==""||mima2==""||user==""||phone2==""){
+		alert("用户名/手机号/邮箱或密码不能为空！");
+		return false;
+	}
+   if($("#qie2").hasClass("email2")){
+	   	
+	var filter=/^[A-Za-z\d]+[A-Za-z\d\-_\.]*@([A-Za-z\d]+[A-Za-z\d\-]*\.)+[A-Za-z]{2,4}$/;
+	if(!filter.test(email2)){
+		alert("邮箱格式不正确！");
+		return false;
+	}
+   }
+	
+	var mi=/^\w\d{6,20}$/;
+	if(!mi.test(mima2)){
+		alert("密码格式错误！");
+		return false;
+	}
+	
+if($("#qie2").hasClass("phone2")){
+	var reg=/^1[3|4|5|8][0-9]\d{4,8}$/;
+	if(!reg.test(phone)){
+		alert("手机格式不正确！");
+		return false;
+	}
+	
+}
+	var xinmin=/^[\u4E00-\u9FA5]{2,5}$/;
+	if(!xinmin.test(user)){
+		alert("真实姓名格式错误！")
+		return false;
+	}
+
+	
+	})
+	
+	</script>
+
+</body>
+</html>

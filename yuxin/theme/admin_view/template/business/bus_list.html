@@ -1,0 +1,385 @@
+{extend name="base/base" /}
+
+{block name="content"}
+<form method="post" action="" id="listform">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o" href="add.html"> 添加内容</a> </li>
+        <li>搜索：</li>
+        <!--<li>首页-->
+          <!--<select name="s_ishome" class="input" onchange="changesearch()" style="width:60px; line-height:17px; display:inline-block">-->
+            <!--<option value="">选择</option>-->
+            <!--<option value="1">是</option>-->
+            <!--<option value="0">否</option>-->
+          <!--</select>-->
+          <!--&nbsp;&nbsp;-->
+          <!--推荐-->
+          <!--<select name="s_isvouch" class="input" onchange="changesearch()"  style="width:60px; line-height:17px;display:inline-block">-->
+            <!--<option value="">选择</option>-->
+            <!--<option value="1">是</option>-->
+            <!--<option value="0">否</option>-->
+          <!--</select>-->
+          <!--&nbsp;&nbsp;-->
+          <!--置顶-->
+          <!--<select name="s_istop" class="input" onchange="changesearch()"  style="width:60px; line-height:17px;display:inline-block">-->
+            <!--<option value="">选择</option>-->
+            <!--<option value="1">是</option>-->
+            <!--<option value="0">否</option>-->
+          <!--</select>-->
+        <!--</li>-->
+
+          <li>
+            <select name="cid" id="pid" class="input" style="width:150px;line-height:17px;" onchange="changesearch()">
+              <option value="">——请选择平台——</option>
+                {volist name="plat" id="jun"}
+              <option value="{$jun.id}">{$jun.nickname}</option>
+                {/volist}
+            </select>
+          </li>
+
+        <li>
+          <input type="text" placeholder="请输入搜索关键字" id="key" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
+          <a href="javascript:void(0)" class="button border-main icon-search" onclick="changesearch()" > 搜索</a></li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="100" style="text-align:left; padding-left:20px;">ID</th>
+        <th>用户手机号</th>
+        <th>投资金额</th>
+        <th>投资平台</th>
+        <th>平台业务</th>
+        <th>投资时间</th>
+        <th>审核标识</th>
+        <th>审核状态</th>
+        <th>审核人员</th>
+        <th>已奖积分</th>
+        <th width="310">操作</th>
+      </tr>
+      <tbody id="ajax_div">
+      {volist name="list" id="jun"}
+        <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$jun.id}" />{$jun.id}</td>
+            <td data-user-id="{$jun.user_id|default='undefined'}">{$jun.user_mobile}</td>
+            <td>{$jun.investment}</td>
+          <td data-plat-id="{$jun.plat_id|default='undefined'}"><font color="#00CC99">{$jun.plat_name}</font></td>
+          <td width="20%" data-business-id="{$jun.plat_business_id|default='undefined'}"><p>{$jun.content}</p></td>
+          <td>{$jun.invest_time}</td>
+            <td>{$jun.check_tag}</td>
+            <td >
+                {switch name="$jun.status"}
+                {case value="1"}<span style="color:#00CC99">审核通过</span>{/case}
+                {case value="0"}<span>未审核</span>{/case}
+                {case value="-1"}<span style="color:red">审核失败</span>{/case}
+                {default /}状态异常！
+                {/switch}
+            </td>
+            <td data-admin-id="{$jun.admin_id|default='undefined'}">{$jun.admin_name}</td>
+          <td><input type="text"  value="{$jun.award}" style="width:50px; text-align:center; border:1px solid #ddd; padding:7px 0;"  disabled="disabled"/></td>
+          <td>
+              <div class="button-group">
+                  {switch name="$jun.status"}
+               {case value="1"} <p class="button border-green" style="cursor:pointer" onclick="check(this)">通过</p>{/case}
+                 {case value="0"} <a class="button border-main" href="javascript:void(0)" onclick="check(this)" style="cursor:pointer"><span class="icon-edit"></span>审核</a>{/case}
+                 {case value="-1"} <p class="button border-red" href="javascript:void(0)">不通过</p>{/case}
+                  {default /}状态异常！
+                  {/switch}
+                  {eq name="$jun.status" value="0"}
+                  <a class="button border-red" href="javascript:void(0)" onclick="return check_false(this,{$jun.id})"><span class="icon-trash-o"></span>拒绝</a>
+                  {/eq}
+              </div>
+          </td>
+        </tr>
+       {/volist}
+      <tr>
+        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+          全选 </td>
+        <td colspan="7" style="text-align:left;padding-left:20px;"><a href="javascript:void(0)" class="button border-red icon-trash-o" style="padding:5px 15px;" onclick="DelSelect()"> 删除</a> <a href="javascript:void(0)" style="padding:5px 15px; margin:0 10px;" class="button border-blue icon-edit" onclick="sorts()"> 排序</a> 操作：
+          <!--<select name="ishome" style="padding:5px 15px; border:1px solid #ddd;" onchange="changeishome(this)">-->
+            <!--<option value="">首页</option>-->
+            <!--<option value="1">是</option>-->
+            <!--<option value="0">否</option>-->
+          <!--</select>-->
+          <!--<select name="isvouch" style="padding:5px 15px; border:1px solid #ddd;" onchange="changeisvouch(this)">-->
+            <!--<option value="">推荐</option>-->
+            <!--<option value="1">是</option>-->
+            <!--<option value="0">否</option>-->
+          <!--</select>-->
+          <!--<select name="istop" style="padding:5px 15px; border:1px solid #ddd;" onchange="changeistop(this)">-->
+            <!--<option value="">置顶</option>-->
+            <!--<option value="1">是</option>-->
+            <!--<option value="0">否</option>-->
+          <!--</select>-->
+          &nbsp;&nbsp;&nbsp;
+          
+          移动到：
+          <select name="movecid" style="padding:5px 15px; border:1px solid #ddd;" onchange="changecate(this)">
+            <option value="">请选择分类</option>
+            <option value="">产品分类</option>
+            <option value="">产品分类</option>
+            <option value="">产品分类</option>
+            <option value="">产品分类</option>
+          </select>
+          <select name="copynum" style="padding:5px 15px; border:1px solid #ddd;" onchange="changecopy(this)">
+            <option value="">请选择复制</option>
+            <option value="5">复制5条</option>
+            <option value="10">复制10条</option>
+            <option value="15">复制15条</option>
+            <option value="20">复制20条</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist"> {$page} </div></td>
+      </tr>
+        </tbody>
+    </table>
+  </div>
+</form>
+<script type="text/javascript">
+
+    //审核订单
+    function check(obj){
+
+        var o = $(obj);
+
+        var business_id  = o.closest('tr').find('td').eq(4).data('business-id');
+
+        var uid = o.closest('tr').find('td').eq(1).data('user-id');
+
+        var id = o.closest('tr').find('td').eq(0).val();
+
+        if(id == 'undefined'||business_id == 'undefined' ||uid == 'undefined')
+        {
+            alert('数据出错，请联系管理员！');
+            return;
+        }
+
+        var index = layer.prompt({
+            title: '输入审核标识符，并确认',
+            formType: 3,
+
+        }, function(val, index){
+            layer.close(index);
+          // layer.msg('演示完毕！您的口令：'+ val);
+            var url = "/admin/business/check_bus.html";
+            var param = {'val' : val,'id' : id,'bid' : business_id,'uid' : uid};
+            $.post(url,param,function(data){
+                   if(data.status == 1)
+                   {
+                       o.closest('tr').find('td').eq(6).text(val).next().html('<span style="color:#00CC99">审核通过</span>');
+                       o.closest('tr').find('td').eq(9).children().first().val(data.point);
+                       o.closest('div').html('<p class="button border-green" style="cursor:pointer" onclick="check(this)">通过</p>');
+                       layer.msg('审核成功');
+                   }
+                    else
+                   {
+                       layer.msg('审核出现错误，请联系管理员！');
+                   }
+
+            },"json");
+
+        });
+    }
+
+
+//搜索
+function changesearch(){
+         var pid = $('#pid').val();
+        var key = $('#key').val();
+       var url = "/admin/business/ajax_get_list?pid="+pid+'&key='+key;
+
+    $.get(url,function(data){
+
+        $('#ajax_div').html(data);
+
+    },'html');
+
+		
+}
+
+//审核不通过
+function check_false(obj,id){
+
+    var o = $(obj);
+    layer.confirm('您确定要拒绝通过吗?', {
+        btn: ['确定','取消'] //按钮
+    }, function(){
+
+        var url = "/admin/business/check_false.html?id="+id;
+        $.getJSON(url,function(data){
+            if(data.status == 1)
+            {
+                o.closest('tr').find('td').eq(7).html('<span style="color:red">不通过</span>');
+                o.closest('tr').find('td').eq(9).children().first().val('');
+                o.closest('div').html('<p class="button border-red" href="javascript:void(0)">不通过</p>');
+                layer.msg(data.msg);
+            }
+        });
+
+    }, function(){
+    });
+
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+//批量删除
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false;		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+//批量排序
+function sorts(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		return false;
+	}
+}
+
+
+//批量首页显示
+function changeishome(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+//批量推荐
+function changeisvouch(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");	
+		
+		return false;
+	}
+}
+
+//批量置顶
+function changeistop(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+
+//批量移动
+function changecate(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		
+		return false;
+	}
+}
+
+//批量复制
+function changecopy(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		var i = 0;
+	    $("input[name='id[]']").each(function(){
+	  		if (this.checked==true) {
+				i++;
+			}		
+	    });
+		if(i>1){ 
+	    	alert("只能选择一条信息!");
+			$(o).find("option:first").prop("selected","selected");
+		}else{
+		
+			$("#listform").submit();		
+		}	
+	}
+	else{
+		alert("请选择要复制的内容!");
+		$(o).find("option:first").prop("selected","selected");
+		return false;
+	}
+}
+
+</script>
+{/block}

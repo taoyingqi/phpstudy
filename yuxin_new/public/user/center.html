@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+    <link rel="stylesheet" type='text/css' href="/static/home/css/base.css">
+    <link rel="stylesheet" type='text/css' href="/static/home/css/common.css">
+    <link rel="stylesheet" type='text/css' href="/static/home/css/user.css">
+</head>
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="headerM wrap clear">
+            <div class="headerL">
+                <span>www.jifendian.com</span>
+                <a href="javascript:;" id="favorites">收藏本站</a>
+            </div>
+            <div class="headerR">
+                            <span>
+                                <a href="/user/login.html">登录</a>
+                                <a href="/user/register.html">注册</a>
+                            </span>
+                <a href="/user/center.html" target="_blank" class="myOrder">个人中心</a>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav">
+        <div class="navInner wrap clear">
+            <div class="logo">
+                <a href="/index.html" target="_blank"><img src="/static/home/img/logo.png" alt=""></a>
+            </div>
+            <div class="navM">
+                <ul class="nav_list clear">
+                    <li><a href="javascript:;" target="_blank">首页</a></li>
+                    <li><a href="/jinrong.html" target="_blank">金融理财</a></li>
+                    <li><a href="/fenlei.html" target="_blank">P2P投资</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--内容区域-->
+    <div class='main wrap clear'>
+        <div class="mainMenu">
+            <div class="userInfo">
+                <div class="userHeader">
+                    <i></i>
+                    <img class="personal1_header_img" src="/static/home/img/user/userHeader.jpg" alt="">
+                </div>
+                <h5 class="userName textEll"></h5>
+                <p class="userIntegral textEll"></p>
+            </div>
+            <div class="mainM">
+                <ul class="mainM_list">
+                    <li class="mainM_page personal" datanumber="0">
+                        <a href="javascript:;" class="clear"><i></i><span>资料中心</span></a>
+                    </li>
+                    <li class="mainM_page integral" id="integral" datanumber="1">
+                        <a href="javascript:;" class="clear"><i></i><span>我的积分</span></a>
+                    </li>
+                    <li class="moneyInfo">
+                        <a href="javascript:;" class="clear"><i></i><span>提现中心</span></a>
+                        <ul class="mainM_inner_list">
+                            <li class="mainM_page" datanumber="2" id="moneyInfo1"><a href="javascript:;">提现记录</a></li>
+                            <li class="mainM_page" datanumber="3" id="moneyInfo2"><a href="javascript:;">提现单</a></li>
+                        </ul>
+                    </li>
+                    <li class="finance">
+                        <a href="javascript:;" class="clear"><i></i><span>金融业务</span></a>
+                        <ul class="mainM_inner_list">
+                            <li class="mainM_page" datanumber="4" id="finance1"><a href="javascript:;">自助交单</a></li>
+                            <li class="mainM_page" datanumber="5" id="finance2"><a href="javascript:;">订单详情</a></li>
+                        </ul>
+                    </li>
+                    <!--我的消息/我的邀请-->
+                    <!--<li class="mainM_page myNews" datanumber="6">
+                        <a href="javascript:;" class="clear"><i></i><span>我的消息</span></a>
+                    </li>
+                    <li class="invitation">
+                        <a href="javascript:;" class="clear"><i></i><span>我的邀请</span></a>
+                        <ul class="mainM_inner_list">
+                            <li class="mainM_page" datanumber="7"><a href="javascript:;">邀请链接</a></li>
+                            <li class="mainM_page" datanumber="8"><a href="javascript:;">奖励明细</a></li>
+                            <li class="mainM_page" datanumber="9"><a href="javascript:;">邀请记录</a></li>
+
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="article">
+            <div class="personal1">
+                <table class="personal1_tab">
+                    <tr class="personal1_header">
+                        <td><i class="personal1_icon"></i></td>
+                        <td>我的头像</td>
+                        <td>我的个性，快来设置你喜欢的头像吧</td>
+                        <td class="personal1_header_img"><i></i><img class="personal1_header_img" src="/static/home/img/user/userHeader.jpg" alt=""></td>
+                        <td><a href="javascript:;">去修改</a></td>
+                    </tr>
+                    <tr class="personal1_name">
+                        <td><i class="personal1_icon"></i></td>
+                        <td>实名认证</td>
+                        <td>保障账户安全，确认真实身份</td>
+                        <td class="condition"><i class="false"></i><span>未认证</span></td>
+                        <td><a href="javascript:;">去认证</a></td>
+                    </tr>
+                    <tr class="personal1_phone">
+                        <td><i class="personal1_icon"></i></td>
+                        <td>电话号码</td>
+                        <td>保障资金安全</td>
+                        <td class="condition"><i class="true"></i>已绑定</td>
+                        <td>35*****1245</td>
+                    </tr>
+                    <tr class="personal1_mall">
+                        <td><i class="personal1_icon"></i></td>
+                        <td>邮箱绑定</td>
+                        <td>获取最新的投资资讯和账户资金变动通知</td>
+                        <td class="condition"><i class="false"></i><span>未绑定</span></td>
+                        <td><a href="javascript:;">去绑定</a></td>
+                    </tr>
+                    <tr class="personal1_alipay">
+                        <td><i class="personal1_icon"></i></td>
+                        <td>支付宝绑定</td>
+                        <td>支付宝绑定，提现的唯一平台</td>
+                        <td class="condition"><i class="false"></i><span>未绑定</span></td>
+                        <td><a href="javascript:;">去绑定</a></td>
+                    </tr>
+                    <tr class="personal1_password">
+                        <td><i class="personal1_icon"></i></td>
+                        <td>我的密码</td>
+                        <td>安全性高的密码使财产更安全</td>
+                        <td class="condition"><i class="true"></i><span>已设置</span></td>
+                        <td><a href="javascript:;">去修改</a></td>
+                    </tr>
+                </table>
+                <div class="personal1_pop">
+                    <div class="personal1_header_pop">
+                        <h4 class="personal1_pop_title">修改头像<i></i></h4>
+                        <form action="/home/user/modify_picture" enctype="multipart/form-data" method="post">
+                            <label><input type="file" name="picture"></label>
+                            <div class="personal1_pop_btn" id="personal1_header_pop_btn">
+                                <button type="button">保存</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="personal1_name_pop">
+                        <h4 class="personal1_pop_title">实名认证<i></i></h4>
+                        <form action="/home/user/set_real_info" method="post">
+                            <label><span>身份证姓名：</span><input type="text" name="real_name"></label>
+                            <label><span>身份证号码：</span><input type="text" name="identity_card"></label>
+                            <div class="personal1_pop_btn" id="personal1_name_pop_btn">
+                                <button type="button">保存</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="personal1_phone_pop"></div>
+                    <div class="personal1_mall_pop">
+                        <h4 class="personal1_pop_title">邮箱绑定<i></i></h4>
+                        <form action="/home/user/bind_email" method="post">
+                            <label><span>邮箱：</span><input type="text" name="email"><a href="javascript:;">获取验证码</a></label>
+                            <label class="personal1_mall_pop_verification "><span>填写验证码：</span><input type="text" name="email_code"></label>
+                            <div class="personal1_pop_btn" id="personal1_mall_pop_btn">
+                                <button type="button">确认</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="personal1_alipay_pop">
+                        <h4 class="personal1_pop_title">支付宝绑定<i></i></h4>
+                        <form action="/home/user/bind_alipay" method="post">
+                            <label><span>支付宝账号：</span><input type="text" name="alipay"></label>
+                            <div class="personal1_pop_btn" id="personal1_alipay_pop_btn">
+                                <button type="button">确认</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="personal1_password_pop">
+                        <h4 class="personal1_pop_title">密码修改<i></i></h4>
+                        <form action="/home/user/change_password" method="post">
+                            <label><span>旧密码：</span><input type="text" name="old_password"></label>
+                            <label><span>新密码：</span><input type="password" name="new_password"></label>
+                            <label><span>重复新密码：</span><input type="password" name="repassword"></label>
+                            <div class="personal1_pop_btn" id="personal1_password_pop_btn">
+                                <button type="button">确认</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="integral1">
+                <ul class="integral1_list clear">
+                    <li id="integral1_list1">
+                        <h2>0</h2>
+                        <p>剩余余额</p>
+                    </li>
+                    <li id="integral1_list2">
+                        <h2>0</h2>
+                        <p>可提现余额</p>
+                    </li>
+                    <li id="integral1_list3">
+                        <h2>0</h2>
+                        <p>累计余额</p>
+                    </li>
+                </ul>
+
+                <!--我的积分原页面，表格-->
+                <!--<div class="moneyInfo1_top clear">
+                    <div class="moneyInfo1_top_m">
+                        <h2>0</h2>
+                        <p>可提现积分</p>
+                    </div>
+                    <div class="moneyInfo1_top_m">
+                        <h2>0</h2>
+                        <p>可提现积分</p>
+                    </div>
+                </div>
+                <div class="integral1M">
+                    <h4>积分明细</h4>
+                    <table class="integral1_tab" border="1">
+                        <tbody>
+                            <tr>
+                                <th>奖励类型</th>
+                                <th>奖励时间</th>
+                                <th>奖励金额</th>
+                                <th>状态</th>
+                            </tr>
+                        </tbody>
+                        <tbody id="integral1_tab_inner">
+
+                        </tbody>
+                        <tr>
+                            <td>签到</td>
+                            <td>2016.12.30</td>
+                            <td>10</td>
+                            <td>已到账</td>
+                        </tr>
+                        <tr>
+                            <td>邀请好友</td>
+                            <td>2016.12.30</td>
+                            <td>10</td>
+                            <td>审核中</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="centerPage" id="integral1_page">
+
+                </div>-->
+            </div>
+            <div class="moneyInfo1">
+                <div class="moneyInfo1_top clear">
+                    <div class="moneyInfo1_top_m" id="moneyInfo1_top1">
+                        <h2>0</h2>
+                        <p>剩余积分</p>
+                    </div>
+                    <div class="moneyInfo1_top_m" id="moneyInfo1_top2">
+                        <h2>0</h2>
+                        <p>累计提现积分</p>
+                    </div>
+                </div>
+                <table class="moneyInfo1_tab">
+                    <tbody>
+                        <tr>
+                            <th>单号</th>
+                            <th>申请时间</th>
+                            <th>提现积分</th>
+                            <th>审核状态</th>
+                            <th>付款状态</th>
+                        </tr>
+                    </tbody>
+                    <tbody id="moneyInfo1_tab_inner">
+
+                    </tbody>
+
+                </table>
+                <div class="centerPage" id="moneyInfo1_page"></div>
+                <div class="moneyInfo1_bot">
+                    <h5>提示：</h5>
+                    <p>亲爱的大米，米咖账户提现受理时段为：工作日AM10:00-PM18:00（法定节假日提现需求受理顺延至下一工作日）<br>
+                        提现时间（T+1）：工作日期间，投资者当日申请提现，次日AM10:00- PM 18:00受理转账。<br>
+                        由于近期米咖网提现人数过多，平台决定：同一账号每天提现次数为2笔。<br>
+                        注：邮政银行储蓄卡到账时间为72小时，请大米勿要频繁催促客服人员，米咖持续提升服务质量。如您在投资过程中遇到其它问题</p>
+                </div>
+            </div>
+            <div class="moneyInfo2">
+                <h4 class="article_title">提现单</h4>
+                <div class="moneyInfo1_top clear">
+                    <div class="moneyInfo1_top_m" id="moneyInfo2_top1">
+                        <h2>0</h2>
+                        <p>剩余积分</p>
+                    </div>
+                    <div class="moneyInfo1_top_m" id="moneyInfo2_top2">
+                        <h2>0</h2>
+                        <p>可提现积分</p>
+                    </div>
+                </div>
+                <form action="/home/center/create_order" class="moneyInfo2_form" id="moneyInfo2_form">
+                    <div id="moneyInfo2_alipay">
+                        <label>支付宝账户：</label>
+                        <input type="text" disabled>
+                    </div>
+                    <div id="moneyInfo2_real_name">
+                        <label>支付宝用户名：</label>
+                        <input type="text" disabled>
+                    </div>
+                    <div>
+                        <label>提现金额：</label>
+                        <input type="text" name="jfd_point">
+                        <span class="textEll">100积分=1元</span>
+                    </div>
+                    <div class="moneyInfo2_form_btn">
+                        <button type="button">提交申请</button>
+                    </div>
+                </form>
+            </div>
+            <div class="finance1">
+                <div class="finance1_top">
+                    <h3>温馨提示</h3>
+                    <p>1、自助交单功能仅用于未与米咖进行数据对接的网贷平台查看详情 → 投资攻略 → 返利提现：XX贷因未与米咖对接，投资成功后请到（个人中心→投资管理→自助交单→填写数据→提交）>。<br>
+                        2、交单前请确定注册手机、投资金额、投资期限及成功投资后的截图等信息是否准确。需注意的是，成功投资后的截图内容须包含（时间、金额）等信息，提交成功后请耐心等待。米咖与平台确认无误后会将数据返回到该账户“投资记录”中。<br>
+                        3、单笔投资金额限单次提交，同一平台的多次投资请分多次提交订单截图。例如，投资人A， 一天内投资微邦金融3次，金额分别是30000元、50000元、10000元，自助提交订单时请分别按三个订单提交，而不能一次提交三单总和90000元。<br>
+                        4、星期六、星期日提交的订单，米咖将统一在星期一查询，请勿频繁催促客服人员。<br>
+                        5、请大米朋友保持手机畅通，如遇数据问题米咖客服将与您电话沟通。
+                    </p>
+                </div>
+                <div class="finance1M">
+                    <h4>自助订购</h4>
+                    <table class="integral1_tab" border="1">
+                        <tr>
+                            <th>平台名称</th>
+                            <th>投资产品</th>
+                            <th>投资金额</th>
+                            <th>投资天数（月/天）</th>
+                            <th>投资时间</th>
+                        </tr>
+                        <tr>
+                            <td class="plat_id">
+                                <select name="plat_id">
+                                    <option value="0">请选择平台</option>
+                                </select>
+                            </td>
+                            <td class="plat_business_id">
+                                <select name="plat_business_id">
+                                    <option value="0">请选择产品</option>
+                                </select>
+                            </td>
+                            <td class="investment">
+                                <input type="text">
+                            </td>
+                            <td class="time_limit">
+                                <input type="text">
+                            </td>
+                            <td class="invest_time">
+                                <input type="text" id="txtBeginDate">
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="finance1_btn">
+                        <button type="button">提交</button>
+                    </div>
+                </div>
+            </div>
+            <div class="finance2">
+                <h4 class="article_title">订单详情</h4>
+                <div class="finance2M">
+                    <div class="finance2M_menu clear">
+                        <ul class="finance2M_list">
+                            <li class="finance2M_list_cur" id="finance2M_list_all" data_status="all"><a href="javascript:;">全部</a></li>
+                            <li data_status="0"><a href="javascript:;" id="finance2M_list_0">审核中</a></li>
+                            <li data_status="1"><a href="javascript:;" id="finance2M_list_1">审核通过</a></li>
+                            <li data_status="-1"><a href="javascript:;" id="finance2M_list_-1">审核失败</a></li>
+                        </ul>
+                        <p>还没订单？<a href="javascript:;" target="_blank">去购买</a></p>
+                    </div>
+                    <table class="finance2M_tab" border="1">
+                        <tbody>
+                            <tr>
+                                <th>平台名称</th>
+                                <th>业务名称</th>
+                                <th>投资期限</th>
+                                <th>投资金额</th>
+                                <th>投资时间</th>
+                                <th>积分返利</th>
+                                <th>状态</th>
+                            </tr>
+                        </tbody>
+                        <tbody class="finance2M_tab_inner" id="finance2M_tab_inner">
+
+                        </tbody>
+                    </table>
+                    <div class="centerPage" id="finance2_page">
+
+                    </div>
+                </div>
+            </div>
+            <!--我的消息/我的邀请-->
+            <!--<div class="myNews1">
+                <h4 class="article_title">我的消息</h4>
+                <table class="myNews1_tab" border="1" cellpadding="10">
+                    <tr>
+                        <th>发自</th>
+                        <th>内容</th>
+                        <th>时间</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td>系统消息</td>
+                        <td>恭喜您，于2017-02-09领取任务“手机号码认证”的奖励金额2元已充值到您的账户余额！</td>
+                        <td>2017-02-13<br>13.33.44</td>
+                        <td>删除</td>
+                    </tr>
+                    <tr>
+                        <td>系统消息</td>
+                        <td>恭喜您，于2017-02-09领取任务“手机号码认证”的奖励金额2元已充值到您的账户余额！</td>
+                        <td>2017-02-13<br>13.33.44</td>
+                        <td>删除</td>
+                    </tr>
+                    <tr>
+                        <td>系统消息</td>
+                        <td>恭喜您，于2017-02-09领取任务“手机号码认证”的奖励金额2元已充值到您的账户余额！</td>
+                        <td>2017-02-13<br>13.33.44</td>
+                        <td>删除</td>
+                    </tr>
+                    <tr>
+                        <td>系统消息</td>
+                        <td>恭喜您，于2017-02-09领取任务“手机号码认证”的奖励金额2元已充值到您的账户余额！</td>
+                        <td>2017-02-13<br>13.33.44</td>
+                        <td>删除</td>
+                    </tr>
+                    <tr>
+                        <td>系统消息</td>
+                        <td>恭喜您，于2017-02-09领取任务“手机号码认证”的奖励金额2元已充值到您的账户余额！</td>
+                        <td>2017-02-13<br>13.33.44</td>
+                        <td>删除</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="invitation1">
+                <div class="invitation1_top">
+                    <h4>奖励规则</h4>
+                    <p>1、通过邀请链接邀请一位好友注册，当其完成首次提现，提现金额在100-199元的，即可得5元奖励<br>
+                        2、通过邀请链接邀请一位好友注册，当其完成首次提现，提现金额在200-349元的，即可得10元奖励<br>
+                        3、通过邀请链接邀请一位好友注册，当其完成首次提现，提现金额在350元以上的，即可得25元奖励
+                    </p>
+                </div>
+                <div class="invitation1_bot clear">
+                    <span>邀请好友赚钱吧！</span>
+                    <p>http://www.mika18.com/Admin/zhuce?uid=18886</p>
+                    <span class="copy">复制</span>
+                </div>
+            </div>
+            <div class="invitation2">
+                <div class="invitation2M">
+                    <h4>邀请明细</h4>
+                    <table class="integral1_tab" border="1">
+                        <tr>
+                            <th>被邀请用户</th>
+                            <th>邀请时间</th>
+                            <th>注册时间</th>
+                            <th>注册号码</th>
+                        </tr>
+                        <tr>
+                            <td>一个号花费多少</td>
+                            <td>2017.01.03</td>
+                            <td>2017.01.04</td>
+                            <td>100122133</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="invitation3">
+                <div class="invitation2M">
+                    <h4>邀请记录</h4>
+                    <table class="integral1_tab" border="1">
+                        <tr>
+                            <th>被邀请用户</th>
+                            <th>邀请时间</th>
+                            <th>注册时间</th>
+                            <th>注册号码</th>
+                        </tr>
+                        <tr>
+                            <td>一个号花费多少</td>
+                            <td>2017.01.03</td>
+                            <td>2017.01.04</td>
+                            <td>100122133</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <!--底部区域-->
+    <div class="footer">
+        <div class="footerInner wrap">
+            <div class="footerM clear">
+                <ul class="footer_list">
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;" target="_blank">关于我们</a></li>
+                            <li><a href="javascript:;" target="_blank">公司简介</a></li>
+                            <li><a href="javascript:;" target="_blank">联系我们</a></li>
+                            <li><a href="javascript:;" target="_blank">免费声明</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="javascript:;" target="_blank">关于我们</a></li>
+                            <li><a href="javascript:;" target="_blank">公司简介</a></li>
+                            <li><a href="javascript:;" target="_blank">联系我们</a></li>
+                            <li><a href="javascript:;" target="_blank">免费声明</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer_word">
+                    <p><i></i>456556434123</p>
+                    <p><i></i>0591-1225544</p>
+                    <p>咨询时间：8：00 - 20:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="/plugin/jquery/jquery183.min.js"></script>
+<script type="text/javascript" src="/plugin/json/json2.js"></script>
+<script type="text/javascript" src="/plugin/jquery/jquery.form.js"></script>
+<script type="text/javascript" src="/plugin/layer/layer.js"></script>
+<script type="text/javascript" src="/static/home/js/lyz.calendar.min.js"></script>
+<script type="text/javascript" src="/static/home/js/common.js"></script>
+<script type="text/javascript" src="/static/home/js/user.js"></script>
+<script type="text/javascript" src="/plugin/page/jquery.page.js"></script>
+</html>

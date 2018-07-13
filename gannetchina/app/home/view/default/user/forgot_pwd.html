@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>{:lang('forget password')} {$site_name}</title>
+
+<link rel="stylesheet" href="{$yf_theme_path}public/css/style_login.css">
+<script src="{$yf_theme_path}public/js/jquery.min.js"></script>
+</head>
+<body style="background:url({$yf_theme_path}public/images/login_bg2.jpg)">
+<div class="container" >
+	<div class="login-wrap">
+		<div class="login-head">
+			<div class="left"><img src="{$yf_theme_path}public/images/logo.png" width="180"></div>
+			<div class="right">
+				<div class="selector">
+					<img src="{$yf_theme_path}public/images/nation.png" class="nation-icon"><span>中</span><img src="{$yf_theme_path}public/images/xiala.png" class="down-icon">
+				</div>
+			</div>
+			<div class="droplist" style="display:none"><ul><li>简体中文</li><li>English</li><li>繁体中文(台湾)</li></ul></div>
+		</div>
+<div class="login-body" >
+	<div class="tab-container">
+		<div class="content1" >
+			<div class="c-title"><span class="title-left">找回密码</span><span class="title-right">换成手机</span></div>
+			<form action="" method="post">
+				<div class="item"><span class="s-nation" style="display:none;"><img class="nation-icon" src="{$yf_theme_path}public/images/nation.png"><span></span></span><input id="qie" class="email" type="text" name="" value="" placeholder="邮箱"></div>
+				
+				<button type="submit" class="btn1">发送验证邮件</button>
+			</form>
+			<div class="moni">想起密码<a href="{:url('home/Login/index')}">立即登录</a></div>
+		</div>
+		<div class="content2" style="display:none;">
+			<div class="c-title"><span class="title-left">找回密码</span><span class="title-right">换成邮箱</span></div>
+			<form action="" method="post">
+			
+				<div class="item"><span class="s-nation"><img class="nation-icon" src="{$yf_theme_path}public/images/nation.png"><span></span></span><input id="qie2" class="phone"  type="text" name="" value="" placeholder="手机"></div>
+			    
+				<button type="submit" class="btn2">下一步</button>
+				<div class="moni" >想起密码<a href="{:url('home/Login/index')}">立即登录</a></div>
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+<script>
+	$(".selector").click(function(){
+		$(".droplist").toggle();
+	})
+	
+	
+	$(".title-right").click(function(){
+		if($(".content2").css("display")=="none"){
+			$(".content1").hide();
+		$(".content2").show();
+		
+		}
+		else{
+	$(".content1").show();
+		$(".content2").hide();
+		}
+	})
+	</script>
+	<script>
+	
+	$(".btn1").click(function(){
+		
+    var email=$(".email").val();
+    var filter=/^[A-Za-z\d]+[A-Za-z\d\-_\.]*@([A-Za-z\d]+[A-Za-z\d\-]*\.)+[A-Za-z]{2,4}$/;
+	if(!filter.test(email)){
+		alert("邮箱格式不正确！");
+		return false;
+	}
+		
+		})
+	$(".btn2").click(function(){
+		
+		var phone=$(".phone").val();
+		var reg=/^1[3|4|5|8][0-9]\d{4,8}$/;
+	if(!reg.test(phone)){
+		alert("手机格式不正确！");
+		return false;
+	}
+		
+	})
+	
+	
+	
+	
+	</script>
+</body>
+</html>

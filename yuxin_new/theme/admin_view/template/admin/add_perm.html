@@ -1,0 +1,70 @@
+{extend name="base/base" /}
+{block name="css" }
+<style>
+    td { padding:5px; }
+    .w_100 { width: 100% !important; }
+    .w_33 { width: 33%}
+    #gname input{
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        padding-left:5px;
+    }
+    #gname { margin: -5px 0 10px 10px; }
+    #gname>span {font-size: 18px;}
+
+</style>
+{/block}
+{block name="content"}
+<div class="panel admin-panel">
+    <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>编辑权限</strong></div>
+    <div class="body-content">
+        <form method="post" class="form-x" action="">
+            <input type="hidden" name="gid" value="">
+            <div id="gname"><span>角色名称：</span><input type="text" name="gname" value="" /></div>
+            <table width="100%" border="0"  cellspacing="1" cellpadding="3" style="background-color:#1180b8">
+                <tbody>
+                {volist name="prem" id="jun"}
+                <tr>
+                    <td style="font-size:18px;font-weight:200;color:#fff">{$jun.perm_name}</td>
+                    <input type="hidden" name="perm_ids[]" value="{$jun.id}">
+                </tr>
+                <tr>
+                    <td bgcolor="#fff">
+                        <table width="100%" border="0" cellspacing="1" cellpadding="3" >
+                            <tbody>
+                            {volist name="$jun.child" id="junjun"}
+
+                            <tr>
+                                {volist name="$junjun" id='jun1'}
+                                <td class="w_33" height="23">
+                                    <label>
+                                        <input name="perm_ids[]" type="checkbox"  value="{$jun1.id}">
+                                        {$jun1.perm_name}
+                                    </label>
+                                </td>
+                                {/volist}
+
+                            </tr>
+
+                            {/volist}
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+            <div class="form-group" style="border-top:solid 2px #1180b8; ">
+                <div class="label" style="margin:0;padding-top:30px;">
+                    <label></label>
+                </div>
+                <div class="field" style="text-align:center;">
+                    <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+                    <input type="hidden" id="submit_url" value="/admin/admin/do_add_perm.html">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{/block}

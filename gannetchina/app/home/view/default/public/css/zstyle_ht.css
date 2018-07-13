@@ -1,0 +1,103 @@
+#main {
+position: fixed;
+float: none;
+top: 0px;
+margin: auto;
+height: 43px
+}
+
+#float {
+border: 1px solid red;
+position: relative;
+float: left;
+top: 8px;
+height: 43px;
+}
+
+li {
+list-style-type: none;
+}
+/*÷ÿ–¥ bootstrap container¿‡—˘ Ω*/
+
+.container-fluid {
+padding-right: 0px;
+padding-left: 0px;
+}
+
+.carousel-indicators .active {
+background-color: #000;
+}
+
+.col-md-12 {
+padding-bottom: 20px;
+}
+
+.row {
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.home_news_box .item {
+width: 32%;
+}
+.mainnav li a {
+font-size: 16px;
+ }
+
+.home_news_box .item ul li {
+padding-top: 8px; 
+}
+
+#contacts .ccompany{
+	margin-bottom: 8px; padding-bottom: 20px; font-size: 24px; box-sizing: border-box; color: rgb(167, 30, 35); clear: both; border-bottom: 1px solid rgb(195, 195, 195); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, Œ¢»Ì—≈∫⁄; white-space: normal;
+}
+#contacts .center{
+	text-align: center;
+}
+#contacts .addr{
+	margin-right: -20px; margin-left: -20px; box-sizing: border-box; overflow: hidden; color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, Œ¢»Ì—≈∫⁄; font-size: 15px; white-space: normal;
+}
+#contacts .addrdiv{
+	padding-right: 20px; padding-left: 20px; box-sizing: border-box; width: 90%; float: left;
+}
+#contacts .addrp{
+	margin-top: 0px;
+	margin-bottom: 7px; 
+	box-sizing: border-box; 
+	color: rgb(68, 68, 68); 
+	line-height: 2.5;
+	text-align: left;
+}
+#contacts .addrspan{
+	box-sizing: border-box; 
+	display: block; 
+	padding: 0px 0px 0px 48px; 
+	background:url(../images/bg_contact_us_icon_list_1.png)  left 2px no-repeat;
+}
+#contacts .addrsspan{
+	font-family: Œ¢»Ì—≈∫⁄, &quot;Microsoft YaHei&quot;; white-space: normal;
+}
+#contacts .iphone{
+	box-sizing: border-box; display: block; padding: 0px 0px 0px 48px; 
+	background: url(../images/bg_contact_us_icon_list_2.png) left 2px no-repeat;
+}
+#contacts .email{
+	box-sizing: border-box; display: block; padding: 0px 0px 0px 48px; 
+	background: url(../images/bg_contact_us_icon_list_3.png) left 2px no-repeat;
+}
+#contacts .iphone{
+	
+}
+#contacts .iphone{
+	
+}
+.sf-with-ul  img{
+	width: auto; 
+	height: 95px; 
+	position: absolute;
+	left:0px; 
+	top: -30px;
+}
+.carousel-indicators li{
+	background-color: #ff3500;
+}

@@ -1,0 +1,74 @@
+{extend name="base/base" /}
+{block name="js"} <script src="__static__/js/laydate/laydate.js"></script>{/block}
+
+{block name="content"}
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>修改队列</strong></div>
+  <div class="body-content">
+    <form method="post" id="form1" class="form-x" action="">
+
+        <div class="form-group">
+            <div class="label">
+                <label>所属提车档位：</label>
+            </div>
+            <div class="field">
+                <select name="lid" class="input w50" disabled>
+                    <option value="">请选择提车档位</option>
+                    {volist name="$cate" id="vo"}
+                    <option value="{$vo.id}"  {if condition="$queue.lid == $vo.id"}selected{/if}>{$vo.lname}</option>
+                   {/volist}
+                </select>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>所属位置：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="{$queue.num}"  disabled  />
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label">
+            <label>是否提车：</label>
+          </div>
+          <div class="field" style="padding-top:8px;">
+              <label > 否 <input  disabled  type="radio" {if $queue.is_tc == 0}checked{/if} value="0"/></label>
+              &nbsp;&nbsp;
+              <label >是 <input  disabled  type="radio" {if $queue.is_tc == 1}checked{/if} value="1" /></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>用户名称：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" name="username" value="{$queue.username}"   />
+                <div class="tips"></div>
+            </div>
+        </div>
+
+
+
+        <hr>
+        <div class="clear"></div>
+
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+             <input type="hidden" name="id" value="{$queue.id}" >
+            <input type="hidden" id="submit_url" value="/admin/queue/do_edit_queue.html">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{/block}

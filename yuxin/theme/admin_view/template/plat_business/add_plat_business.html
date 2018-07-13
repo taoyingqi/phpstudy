@@ -1,0 +1,158 @@
+{extend name="base/base" /}
+{block name="css"}
+    <style>
+        .percent {
+            font-size: 20px;
+            margin-left: 10px;
+            float: left;
+            margin-top: 5px;
+            margin-right: -15px;
+                }
+        </style>
+{/block}
+
+{block name="content"}
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>增加平台业务</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="">
+
+        <div class="form-group">
+            <div class="label">
+                <label>所属平台：</label>
+            </div>
+            <div class="field">
+                <select name="plat" class="input w50" data-validate="required:请选择平台">
+                    <option value="">请选择平台</option>
+                    {volist name="plat" id="jun"}
+                    <option value="{$jun.id}|{$jun.nickname}">{$jun.nickname}</option>
+                    {/volist}
+                </select>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>业务介绍：</label>
+            </div>
+            <div class="field">
+                <textarea class="input w50" name="note" style=" height:90px;"></textarea>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>积分返利比：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="" placeholder="请填写整数,无需加%后缀" name="rebate" data-validate="required:请输入积分返利比" />
+                <span class="percent">%</span>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>投资收益：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="" name="plat_income" data-validate="required:请输入投资收益" />
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>投资金额：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="" name="investment_amount" data-validate="required:请输入投资金额" />
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>投资期限：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="" name="investment_horizon" data-validate="required:请输入投资期限" />
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>总收益：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="" name="total_income" data-validate="required:请输入总收益" />
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>投资提示：</label>
+            </div>
+            <div class="field">
+                <textarea class="input w50" name="tips" style=" height:90px;"></textarea>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="label">
+                <label>参与人数：</label>
+            </div>
+            <div class="field">
+                <input type="text" class="input w50" value="" name="part_num"  disabled/>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <div class="label">
+            <label>是否启用：</label>
+          </div>
+          <div class="field" style="padding-top:8px;"> 
+             <input name="status"  type="checkbox" checked="checked" />
+          </div>
+        </div>
+     
+      <div class="clear"></div>
+
+      <div class="form-group">
+        <div class="label">
+          <label>业务排序：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" name="sort" value="0"  data-validate="number:排序必须为数字" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <!--<div class="form-group">-->
+        <!--<div class="label">-->
+          <!--<label>发布时间：</label>-->
+        <!--</div>-->
+        <!--<div class="field">-->
+          <!--<input type="text" class="laydate-icon input w50" name="datetime" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" value=""  data-validate="required:日期不能为空" style="padding:10px!important; height:auto!important;border:1px solid #ddd!important;" />-->
+          <!--<div class="tips"></div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+            <input type="hidden" id="submit_url" value="/admin/plat_business/do_add_business">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{/block}

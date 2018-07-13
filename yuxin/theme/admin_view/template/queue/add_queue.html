@@ -1,0 +1,61 @@
+{extend name="base/base" /}
+{block name="js"} <script src="__static__/js/laydate/laydate.js"></script>{/block}
+
+{block name="content"}
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>加入提车队列</strong></div>
+  <div class="body-content">
+    <form method="post" id="form1" class="form-x" action="">
+
+        <div class="form-group">
+            <div class="label">
+                <label>所属提车档位：</label>
+            </div>
+            <div class="field">
+                <select name="lid" class="input w50">
+                    <option value="">请选择所属提车档位</option>
+                    {volist name="cate" id="jun"}
+                    <option value="{$jun.id}">{$jun.lname}</option>
+                    {/volist}
+                </select>
+                <div class="tips"></div>
+            </div>
+        </div>
+
+
+      <div class="form-group">
+        <div class="label">
+          <label>用户ID：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="" name="uid" data-validate="required:请输入需要入队的用户ID" />
+          <div class="tips"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="label">
+          <label>用户手机号：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="" name="mobile" data-validate="required:请输入需要入队的用户手机号" />
+          <div class="tips"></div>
+        </div>
+      </div>
+
+        <hr>
+        <div class="clear"></div>
+
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 加入车队 </button>
+            <input type="hidden" id="submit_url" value="/admin/queue/do_add_queue.html">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+{/block}

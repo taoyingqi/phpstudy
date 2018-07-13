@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<title>{block name="title"}{/block}</title>
+
+	{css href="__static__/css/pintuer.css" /}
+	{css href="__static__/css/admin.css" /}
+	{block name="css"}
+	<style>
+		.pagination li{border: none;}
+	</style>
+	{/block}
+	{js href="__static__/js/jquery.js" /}
+	{js href="__plugin__/layer/layer.js" /}
+	{js href="__static__/js/pintuer.js" /}
+
+	{block name="js"}
+	<script src="__static__/js/laydate/laydate.js"></script>
+	{/block}
+</head>
+<body>
+<form method="post" action="" id="listform">
+	<div class="panel admin-panel">
+		<div class="panel-head"><strong class="icon-reorder"> 内容列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+		<div class="padding border-bottom">
+			<ul class="search" style="padding-left:10px;">
+				<li> <a class="button border-main icon-plus-square-o" href="add_plat.html"> 添加内容</a> </li>
+				<li>搜索：</li>
+
+				<li>
+					<select name="cid" class="input" id="cid" style="width:200px; line-height:17px;" onchange="changesearch()">
+						<option value="">请选择档位</option>
+						{volist name="pcate" id="jun"}
+						<option value="{$jun.id}">{$jun.lname} 档位</option>
+						{/volist}
+					</select>
+				</li>
+				<li>
+					<input type="text" placeholder="请输入搜索关键字" name="key" id="key" class="input" style="width:250px; line-height:17px;display:inline-block" value="" />
+					<a href="javascript:void(0)" class="button border-main icon-search" onclick="changesearch()" > 搜索</a></li>
+			</ul>
+		</div>
+		<table class="table table-hover text-center">
+			<tr>
+				<th width="100" style="text-align:left; padding-left:20px;">ID</th>
+				<th>所属档位</th>
+				<th>队列位置</th>
+				<th>姓名</th>
+				<th>手机</th>
+				<th width="10%">添加时间</th>
+				<th width="310">操作</th>
+			</tr>
+			<tbody id="ajax_tbody">
+			{volist name="$platinfo" id="jun"}
+			<tr>
+				<td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$jun.id}" />{$jun.id}</td>
+				<td>{$jun.lname}</td>
+				<td><a href="#" style="color:#00CC99">{$jun.num}</a></td>
+				<td>{$jun.username}</td>
+				<td>{$jun.mobile}</td>
+				<td>{$jun.adtime}</td>
+				<td>
+					<div class="button-group">
+						<!--<a class="button border-green" href="/admin/plat_business/show_plat_business.html?id={$jun.id}">查看业务</a>-->
+						<a class="button border-main" href="edit_queue.html?id={$jun.id}"><span class="icon-edit"></span> 修改</a>
+						<a class="button border-red" href="javascript:void(0)" onclick="return del(this,{$jun.id})"><span class="icon-trash-o"></span> 删除</a>
+					</div>
+				</td>
+			</tr>
+			{/volist}
+			<tr>
+				<td colspan="7"><div class="pagelist"> {$page} </div></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</form>
+<script type="text/javascript">
+
+	  $(document).ready(function(){
+
+           $('.pagelist ul li a').click(function(e){
+			   e.preventDefault();
+			   alert(1);
+
+		   });
+
+	  });
+
+	//搜索
+	function changesearch(){
+		var cid = $('#cid').val();
+		var key = $('#key').val();
+
+		var url = "/admin/platform/search_plat.html?cid="+cid+'&key='+key;
+		$.get(url,function(res){
+			if(res)
+			{
+				$('#ajax_tbody').html(res);
+			}else
+			{
+				layer.msg('获取分类失败', {icon: 5});
+			}
+
+		});
+
+	}
+
+
+	$(document).on('click','.pagination li',function(e){
+		e.preventDefault();
+		var url = this.firstChild.href;
+		$.get(url,function(res){
+			if(res)
+			{
+				$('#ajax_tbody').html(res);
+			}else
+			{
+				layer.msg('获取分类失败', {icon: 5});
+			}
+
+		});
+	})
+
+	//单个删除
+	function del(obj,id){
+		var o = $(obj);
+
+		layer.confirm('您确定要删除吗？', {
+			btn: ['确定','取消'] //按钮
+		}, function(){
+
+			var url = "/admin/queue/del_queue.html?id="+id;
+			$.getJSON(url,function(res){
+				if(res.status == 1)
+				{
+					layer.msg(res.msg);
+					o.closest('tr').remove();
+				}
+				else
+				{
+					layer.msg(res.msg,function(){});
+				}
+			});
+
+		}, function(){
+//        layer.msg('取消还是确定。。没看清楚再点一次', {
+//            time: 20000, //20s后自动关闭
+//            btn: ['确定', '确定']
+//        });
+		});
+
+	}
+
+	//全选
+	$("#checkall").click(function(){
+		$("input[name='id[]']").each(function(){
+			if (this.checked) {
+				this.checked = false;
+			}
+			else {
+				this.checked = true;
+			}
+		});
+	})
+
+	//批量删除
+	function DelSelect(){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+			var t=confirm("您确认要删除选中的内容吗？");
+			if (t==false) return false;
+			$("#listform").submit();
+		}
+		else{
+			alert("请选择您要删除的内容!");
+			return false;
+		}
+	}
+
+	//批量排序
+	function sorts(){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+
+			$("#listform").submit();
+		}
+		else{
+			alert("请选择要操作的内容!");
+			return false;
+		}
+	}
+
+
+	//批量首页显示
+	function changeishome(o){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+
+			$("#listform").submit();
+		}
+		else{
+			alert("请选择要操作的内容!");
+
+			return false;
+		}
+	}
+
+	//批量推荐
+	function changeisvouch(o){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+
+
+			$("#listform").submit();
+		}
+		else{
+			alert("请选择要操作的内容!");
+
+			return false;
+		}
+	}
+
+	//批量置顶
+	function changeistop(o){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+
+			$("#listform").submit();
+		}
+		else{
+			alert("请选择要操作的内容!");
+
+			return false;
+		}
+	}
+
+
+	//批量移动
+	function changecate(o){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+
+			$("#listform").submit();
+		}
+		else{
+			alert("请选择要操作的内容!");
+
+			return false;
+		}
+	}
+
+	//批量复制
+	function changecopy(o){
+		var Checkbox=false;
+		$("input[name='id[]']").each(function(){
+			if (this.checked==true) {
+				Checkbox=true;
+			}
+		});
+		if (Checkbox){
+			var i = 0;
+			$("input[name='id[]']").each(function(){
+				if (this.checked==true) {
+					i++;
+				}
+			});
+			if(i>1){
+				alert("只能选择一条信息!");
+				$(o).find("option:first").prop("selected","selected");
+			}else{
+
+				$("#listform").submit();
+			}
+		}
+		else{
+			alert("请选择要复制的内容!");
+			$(o).find("option:first").prop("selected","selected");
+			return false;
+		}
+	}
+
+</script>
+</body>
+</html>

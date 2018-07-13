@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>用户登陆</title>
+  <link rel="stylesheet" href="__static__/css/style.css">
+  <script type='text/javascript' src='__static__/js/jquery-2.1.4.js' charset='utf-8'></script>
+  <script type='text/javascript' src='__static__/js/layer/layer.js' charset='utf-8'></script>
+    <style>
+        .jun{
+            display: block;
+            padding-left: 9vw;
+            width: 70vw;
+            height: 10vw;
+            border: 1vw solid #eee;
+            border-radius: 9vw;
+            font-size: 3vw;
+        }
+    </style>
+</head>
+<body>
+  <div class="land-logo">
+    <img src="__static__/img/logo.png" alt="">
+  </div>
+  <div class="land">
+    <form action="" method="post"  id="land_form">
+      <h4>用户登陆</h4>
+      <p><input type="text" name="username" required placeholder="请输入账号"><i class="iconfont">&#xe736;</i></p>
+      <p><input type="password" class="jun" name="pass" required placeholder="请输入密码"><i class="iconfont">&#xe6c0;</i></p>
+      <p><input type="submit" id="sub_tn" value="点击登陆"></p>
+    </form>
+  </div>
+  <div class="bj land-bj"></div>
+
+  <script>
+
+     $('#sub_tn').click(function(e){
+         e.preventDefault();
+
+        var arr = $('#land_form').serializeArray();
+
+       $.ajax({
+          url : "{:url('home/user/do_login')}",
+         data : arr,
+         type : 'post',
+         dataType: 'json',
+         success : function(data){
+               //提示
+               layer.open({
+                 content: data.msg
+                 ,skin: 'msg'
+                 ,time: 2 //2秒后自动关闭
+               });
+                    if(data.code == 1)
+                    {
+                       setTimeout(function(){
+                           location.href = "/";
+                       },1500)
+                    }
+
+         },
+         error : function(err){
+             //提示
+             layer.open({
+               content: '登录失败'
+               ,skin: 'msg'
+               ,time: 2 //2秒后自动关闭
+             });
+         }
+       });
+
+
+
+     });
+
+
+
+
+
+
+//     layer.open({
+//       content: '移动版和PC版不能同时存在同一页面',
+//       style : 'width:70%;',
+//       btn: '我知道了'
+//     });
+
+
+  </script>
+
+</body>
+</html>

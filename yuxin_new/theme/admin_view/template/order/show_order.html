@@ -1,0 +1,192 @@
+{extend name="base/base" /}
+
+{block name="content"}
+<form method="post" action="">
+    <div class="panel admin-panel">
+        <div class="panel-head"><strong class="icon-reorder"> 订单管理</strong></div>
+        <div class="padding border-bottom">
+            <ul class="search" style="padding-left:10px;">
+                <li> <a class="button border-main icon-plus-square-o" href="add_plat.html"> 添加内容</a> </li>
+                <li>搜索：</li>
+                <li>首页
+                    <select name="s_ishome" class="input" onchange="changesearch()" style="width:60px; line-height:17px; display:inline-block">
+                        <option value="">选择</option>
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    推荐
+                    <select name="s_isvouch" class="input" onchange="changesearch()"  style="width:60px; line-height:17px;display:inline-block">
+                        <option value="">选择</option>
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    置顶
+                    <select name="s_istop" class="input" onchange="changesearch()"  style="width:60px; line-height:17px;display:inline-block">
+                        <option value="">选择</option>
+                        <option value="1">是</option>
+                        <option value="0">否</option>
+                    </select>
+                </li>
+                <if condition="$iscid eq 1">
+                    <li>
+                        <select name="cid" class="input" style="width:200px; line-height:17px;" onchange="changesearch(this)">
+                            <option value="">请选择分类</option>
+
+                        </select>
+                    </li>
+                </if>
+                <li>
+                    <input type="text" placeholder="请输入搜索关键字" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
+                    <a href="javascript:void(0)" class="button border-main icon-search" onclick="changesearch()" > 搜索</a></li>
+            </ul>
+        </div>
+        <table class="table table-hover text-center">
+            <tr>
+                <th width="120">ID</th>
+                <th width="15%">订单编码</th>
+                <th width="120">消费积分</th>
+                <th>提现金额</th>
+                <th >用户手机号码</th>
+                <th width="120">订单生成时间</th>
+                <th width="20%">审核状态</th>
+                <th width="120">付款状态</th>
+                <th>操作</th>
+            </tr>
+
+            {volist name="list" id="jun"}
+            <tr style="height: 55px">
+                <td><input type="checkbox" name="id[]" value="{$jun.id}" />{$jun.id}</td>
+                <td>{$jun.order_num}</td>
+                <td>{$jun.jfd_point}</td>
+                <td>{$jun.money}</td>
+                <td>{$jun.user_tel}</td>
+                <td>{$jun.create_time}</td>
+                <td>
+                    {switch name="$jun.ischeck"}
+                    {case value="1"}<span style="color:#66CC33">已通过</span>{/case}
+                    {case value="0"}<span >未审核</span>{/case}
+                    {case value="-1"}<span style="color:#CC3333">不通过</span>{/case}
+                    {default /}
+                    {/switch}
+                </td>
+                <td>
+                    {switch name="$jun.status"}
+                    {case value="1"}已付款{/case}
+                    {case value="0"}未付款{/case}
+                    {default /}
+                    {/switch}
+                </td>
+                <td>
+                    <div class="button-group"><a class="button border-green " href="javascript:;" onclick="open_see({$jun.id})" ><span class="icon-desktop"></span> 查看 </a></div>
+                  {eq name="$jun.ischeck" value="0"}
+                  <div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return check(this,{$jun.id})"><span class="icon-drupal"></span> 审核 </a> </div>
+                    {/eq}
+                    {if condition="($jun.ischeck eq 1) && ($jun.status eq 0)"}
+                  <div class="button-group"> <a class="button border-main" href="/admin/order/pay_money?id={$jun.id}" ><span class="icon-vk"></span> 付款 </a> </div>
+                     {/if}
+                </td>
+            </tr>
+            {/volist}
+
+            <tr>
+                <td colspan="8"><div class="pagelist"> {$page} </div></td>
+            </tr>
+        </table>
+    </div>
+</form>
+<script type="text/javascript">
+
+    function open_see(id)
+    {
+        layer.open({
+            type: 2,
+            title: '查看订单',
+            shadeClose: true,
+            shade: 0.8,
+            area: ['80%', '80%'],
+            content: '/admin/order/see_order?id='+id //iframe的url
+        });
+    }
+
+    function check(obj,id){
+        var o = $(obj);
+
+        layer.confirm('是否通过审核？', {
+            btn: ['通过','拒绝'] //按钮
+        }, function(){
+
+            var url = "/admin/order/check_order.html?id="+id;
+            $.getJSON(url,{'check':'yes'},function(res){
+                if(res.status == 1){
+                    o.closest('tr').find('td').eq(6).html('<span style="color:#66CC33">已通过</span>');
+                    o.closest('div').html('<a class="button border-main" href="/admin/order/pay_money?id={$jun.id}" ><span class="icon-vk"></span> 付款 </a>');
+                    layer.msg('已通过', {icon: 1});
+                }
+            });
+
+        }, function(){
+
+            var url = "/admin/order/check_order.html?id="+id;
+            $.getJSON(url,{'check':'no'},function(res){
+                if(res.status == '1'){
+                    o.closest('tr').find('td').eq(6).html('<span style="color:#CC3333">不通过</span>');
+                    o.closest('div').remove();
+                    layer.msg('已拒绝', {icon: 1});
+                }
+            });
+
+        });
+    }
+
+//    function pay(obj,id){
+//
+//        layer.confirm('您确定要启用吗？', {
+//            btn: ['确定','算了'] //按钮
+//        }, function(){
+//            var o = $(obj);
+//            var url = "/admin/user/ch_user_status.html?type=on&id="+id;
+//            $.get(url,function(res){
+//                if(res){
+//                    o.closest('tr').find('td').eq(2).text('正常');
+//                    o.removeClass('border-main').addClass('border-red').attr('onclick','return off(this,{$jun.id})').html('<span class="icon-drupal"></span> 禁用');
+//                    layer.msg('启用成功', {icon: 1});
+//
+//                }
+//            });
+//
+//
+//        }, function(){});
+//    }
+
+    $("#checkall").click(function(){
+        $("input[name='id[]']").each(function(){
+            if (this.checked) {
+                this.checked = false;
+            }
+            else {
+                this.checked = true;
+            }
+        });
+    })
+
+    function DelSelect(){
+        var Checkbox=false;
+        $("input[name='id[]']").each(function(){
+            if (this.checked==true) {
+                Checkbox=true;
+            }
+        });
+        if (Checkbox){
+            var t=confirm("您确认要删除选中的内容吗？");
+            if (t==false) return false;
+        }
+        else{
+            alert("请选择您要删除的内容!");
+            return false;
+        }
+    }
+
+</script>
+{/block}

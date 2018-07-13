@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+		{include file="public:head" /}	
+    <meta charset="utf-8">
+    <title>{$menu.menu_seo_title|default=$site_seo_title} {$site_name}</title>
+    <meta name="keywords" content="{$menu.menu_seo_key|default=$site_seo_keywords}" />
+    <meta name="description" content="{$menu.menu_seo_des|default=$site_seo_description}">
+		
+</head>
+<div class="container-fluid">
+			{include file="public:nav" /}
+			<div onclick="check()" style="width: 100%;height: 400px;background-color:#1D1D1D; margin:0px;">
+				<img src="{$yf_theme_path}public/images/631133268174329433.jpg" style="margin:0px;border:0px;height: 110%;width: 110%; ">
+			</div>
+<div class="row clearfix context">
+	<div class="col-md-12 column">
+		<div style="margin: 0 auto;min-width: 1100px;">
+			<div style="width: 20%; height: 100%; float: left; ">
+			{include file="public:leftslider"/}
+			</div>
+			<div style="width: 60%; height: 100%;margin-left:150px;float: left; ">
+				<div class="friendly_links">
+					<div class="inner">
+						<div class="maincontent " style=" margin-left: 0px; width: 100%; float: left; color: #687177;">
+						{if condition="$lang eq 'zh-cn'"}
+							<p><br></p><div class="new_page_wrap" style="padding-bottom: 70px; color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="new_page_top" style="overflow: hidden;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><h3 style="margin-bottom: 25px; font-size: 24px; color: rgb(167, 30, 35);">MT4网页交易平台</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">使用基于<span style="color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">Gannet&nbsp;</span>云平台原创设计的MetaQuotes网页交易平台，可在任何需要的时候，通过任意浏览器快速稳定登录您的MT4交易账户。</p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">Gannet&nbsp;</span>是唯一一家使用官方版MetaQuotes交易系统建立整套MT4交易平台的外汇交易商。许多其它的经纪商通常运用外部解决方案，而这一般都不可靠且速度极慢。</p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">Gannet&nbsp;</span> MetaQuotes网页交易平台的直观设计与桌面版MT4平台一致，无需下载与安装客户端便可访问登录交易账户。</p></div></div><div class="new_page_list webtrader_list" style="overflow: hidden;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><div class="item" style="margin-bottom: 8px; overflow: hidden;"><div class="new_page_list_text right" style="float: left;margin-left: 120px;"><ul class="list_tow_li" style=""><li style="margin-right: 18.9063px; width: 226.953px; float: left; ">交易<br><h4 style="font-size: 45px; color: rgb(44, 44, 44);">40</h4><p style="margin-top: 0px; margin-bottom: 10px; line-height: 1.5em;">多种货币对、指数、<br>商品期货和贵金属</p></li><li style=" width: 226.953px; float: left;">支持<br><h4 style="font-size: 45px; color: rgb(44, 44, 44);">多种</h4><p style="margin-top: 0px; margin-bottom: 10px; line-height: 1.5em;">不同的浏览器</p></li></ul></div></div></div></div><div class="webtrader_content" style="text-align: center;"><div class="inner" style="margin-left: 120px; max-width: 965px; float: left; "><h3 style="margin-bottom: 25px; font-size: 24px; color: rgb(167, 30, 35);">无需下载&nbsp;<br>通过任一浏览器登录账户</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><img src="{$yf_theme_path}public/images/liulanqi_img.png" style="border-width: 0px; border-style: initial; max-width: 100%; height: auto; padding: 22px 0px;"></p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">在任何安全网络连接情况下都可登录MT4交易账户。<br>可使用Chrome、Mozilla Firefox、Internet Explorer、Opera 或者Safari浏览器。<br>可使用个人电脑或者Mac电脑。</p></div></div></div>
+							 {else /}
+							<p><br></p><div class="new_page_wrap" style="padding-bottom: 70px; color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;"><div class="new_page_top" style=" overflow: hidden;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><h3 style="margin-bottom: 25px; font-size: 24px; color: rgb(167, 30, 35);">MT4 web trading platform</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">Use based<span style="color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">Gannet&nbsp;</span>The MetaQuotes web trading platform, originally designed by Cloud Platform, allows you to quickly and securely log in to your MT4 trading account from any browser whenever you need to.</p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">Gannet&nbsp;</span>Is the only Forex dealer that uses the official MetaQuotes trading system to create a complete MT4 trading platform. Many other brokers often use external solutions, which are generally unreliable and slow.</p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><span style="color: rgb(47, 39, 37); font-family: &quot;Century Gothic&quot;, &quot;Microsoft YaHei&quot;, 微软雅黑; white-space: normal;">Gannet&nbsp;</span> The intuitive design of the MetaQuotes web trading platform is consistent with the desktop version of the MT4 platform, allowing access to login trading accounts without having to download and install the client.</p></div></div><div class="new_page_list webtrader_list" style="overflow: hidden;"><div class="inner" style="margin-right: auto; margin-left: auto; max-width: 965px;"><div class="item" style="margin-bottom: 80px; overflow: hidden;"><div class="new_page_list_text right" style="float: left;margin-left: 120px;">
+							<ul class="list_tow_li" style=""><li style="margin-right: 18.9063px;width: 226.953px; float: left; ">transaction<br><h4 style="font-size: 45px; color: rgb(44, 44, 44);">40</h4><p style="margin-top: 0px; margin-bottom: 10px; line-height: 1.5em;">Multiple currency pairs, indices,<br>Commodity Futures and Precious Metals</p></li><li style="width: 226.953px; float: left; ">stand by<br><h4 style="font-size: 45px; color: rgb(44, 44, 44);">Variety</h4><p style="margin-top: 0px; margin-bottom: 10px; line-height: 1.5em;">Different browsers</p></li></ul>
+							</div></div></div></div><div class="webtrader_content" style="text-align: center;"><div class="inner" style="margin-left: 120px;max-width: 965px; float: left;"><h3 style="margin-bottom: 25px; font-size: 24px; color: rgb(167, 30, 35);">No need to download&nbsp;<br>Log in to your account from any browser</h3><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;"><img src="{$yf_theme_path}public/images/liulanqi_img.png" style="border-width: 0px; border-style: initial; max-width: 100%; height: auto; padding: 22px 0px;"></p><p style="margin-top: 0px; margin-bottom: 15px; line-height: 1.5em;">Log in to your MT4 trading account with any secure internet connection.<br>Be usableChrome、Mozilla Firefox、Internet Explorer、Opera or Safari browser。<br>Can use PC or Mac computer。</p></div></div></div>
+							{/if}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+{include file="public:footer" /}
+</body>
+</html>

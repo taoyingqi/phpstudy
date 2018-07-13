@@ -1,0 +1,20 @@
+{volist name="lists['news']" id="vo"}
+	<div class="market_analysis_post has_post_thumbnail">
+		<div class="market_analysis_featured">
+			<a rel="bookmark">
+				<img width="180" height="126" src="{$vo['news_img']|get_imgurl}" class="attachment-market_analysis_featured size-market_analysis_featured wp-post-image" alt="{$vo.news_title}">
+			</a>
+		</div>
+		<div style="float:left;width:40%;">
+			<h3><a href="{:url('home/News/index',array('id'=>$vo['n_id']))}" rel="bookmark"><div style="white-space:nowrap; max-width:100%;overflow:hidden; text-overflow:ellipsis;" class="phone_num">{$vo.news_title|msubstr=0,100}</div></a></h3>
+			<div class="market_analysis_meta">
+				<span class="date">
+				<strong>{$vo.news_time||date="Y-m-d h:i:s",###}</strong></span>
+			</div> 
+		</div>
+		<div class="clear"></div>
+	</div>
+{/volist}
+<div class="pagination-centered">
+	{$page_html}
+</div>	

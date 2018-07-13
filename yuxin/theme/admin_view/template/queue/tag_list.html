@@ -1,0 +1,104 @@
+{extend name="base/base" /}
+{block name="css"}
+    <style>
+  .pagination li { border:none;}
+    </style>
+{/block}
+
+{block name="content"}
+<form method="post" action="">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 标签列表</strong></div>
+    <div class="padding border-bottom">
+      <ul class="search">
+        <li>
+          <button type="button"  class="button border-green" id="checkall"><span class="icon-check"></span> 全选</button>
+          <button type="submit" class="button border-red" onclick="return DelSelect()"><span class="icon-trash-o"></span> 批量删除</button>
+        </li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="120">ID</th>
+        <th>标签名</th>
+        <th width="25%">添加时间</th>
+        <th>操作</th>       
+      </tr>
+
+      {volist name="list" id="jun"}
+        <tr>
+          <td><input type="checkbox" name="id[]" value="{$jun.id}" />{$i}</td>
+          <td>{$jun.name}</td>
+          <td>{$jun.add_time}</td>
+          <td><div class="button-group"> <a class="button border-red" href="javascript:void(0)" onclick="return del(this,{$jun.id})"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+      {/volist}
+
+      <tr>
+        <td colspan="8"><div class="pagelist"> {$page} </div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<script type="text/javascript">
+
+function del(obj,id){
+
+     $obj = $(obj);//转换JS对象
+
+	if(confirm("您确定要删除吗?")){
+       var url = "/admin/platform/delete_tag.html?id="+id;
+      $.get(url,function(res){
+            if(res)
+            {
+                $obj.closest('tr').remove();
+            }
+      });
+	}
+}
+
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false;
+        else
+        {
+            ids = [];
+            var check = $("input[name='id[]']:checked");
+           check.each(function(){
+                     ids.push($(this).val());
+          });
+            url ="/admin/platform/select_del.html?ids="+ids;
+            $.get(url,function(res){
+                  if(res)
+                  {
+                      check.remove();
+                  }
+            });
+        }
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+</script>
+{/block}
